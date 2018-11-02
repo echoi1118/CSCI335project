@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/favorites"
+        android:title="string"
+        android:titleCondensed="string"
+        android:icon="@drawable/ic_favorites"
+        android:onClick="method name"
+        android:showAsAction=["ifRoom" | "never" | "withText" | "always" | "collapseActionView"]
+    android:actionLayout="@[package:]layout/layout_resource_name"
+    android:actionViewClass="class name"
+    android:actionProviderClass="class name"
+    android:alphabeticShortcut="string"
+    android:alphabeticModifiers=["META" | "CTRL" | "ALT" | "SHIFT" | "SYM" | "FUNCTION"]
+    android:numericShortcut="string"
+    android:numericModifiers=["META" | "CTRL" | "ALT" | "SHIFT" | "SYM" | "FUNCTION"]
+    android:checkable=["true" | "false"]
+    android:visible=["true" | "false"]
+    android:enabled=["true" | "false"]
+    android:menuCategory=["container" | "system" | "secondary" | "alternative"]
+    android:orderInCategory="integer" />
+    <group android:id="@+id/favorite"
+        android:checkableBehavior=["single"]
+    android:visible=["true" ]
+    android:enabled=["true" ]
+    android:menuCategory=["container" | "system" | "secondary" | "alternative"]
+    android:orderInCategory="integer" >
+    <item />
+</group>
+<item >
+<menu>
+    <item />
+</menu>
+</item>
+
+</menu>
