@@ -5,19 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class CreateAnAccount extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_create_an_account);
     }
 
-    /** Called when the user clicks the Create an Account button */
-    public void goToCreateAccount(View view) {
-        Intent intent = new Intent(this, CreateAnAccount.class);
+    /** Called when the user clicks the "Create" (account) button */
+    public void goToCreateAccountSuccessPage(View view) {
+        Intent intent = new Intent(this, CreateAcctSuccessNotice.class);
         startActivity(intent);
     }
-
-
 }

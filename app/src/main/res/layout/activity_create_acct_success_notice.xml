@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".CreateAcctSuccessNotice"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/rounded_square_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="@string/rounded_square_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_square_img" />
+
+    <!-- Courtesy of: http://www.clipartpanda.com/categories/decorative-line-clipart
+     "Use these free images for your websites, art projects, reports, and Powerpoint presentations!" -->
+    <ImageView
+        android:id="@+id/blue_border_img"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="7dp"
+        android:contentDescription="@string/blue_border_img"
+        app:layout_constraintBottom_toBottomOf="@+id/create_acct_success_notice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/success_notice"
+        app:srcCompat="@drawable/blue_border_img" />
+
+    <TextView
+        android:id="@+id/create_acct_success_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:fontFamily="casual"
+        android:text="@string/create_acct_success_notice"
+        android:textColor="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/success_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:fontFamily="casual"
+        android:text="@string/success_notice"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rounded_square_bg" />
+
+</android.support.constraint.ConstraintLayout>

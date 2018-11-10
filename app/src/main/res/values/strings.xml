@@ -1,18 +1,31 @@
 <resources>
-    <string name="app_name">CSCI335project</string>
+    <string name="app_name">Dogs \'R Us</string>
     <string name="favorites">Favorites</string>
     <string name="dogs">Dogs</string>
-    <string name="about_us">About Us</string>
+    <string name="about_us">About Us</string>  // Change to Our Mission
     <string name="reservations">Reservations</string>
-    <string name="title_activity_login">Sign in</string>
 
     <!-- Strings related to images -->
     <string name="logo">Filled circular image containing logo of the Dogs \'R Us application</string>
+    <string name="rounded_square_bg">White rounded square container which acts as the background to the main content</string>
+    <string name="little_blue_dog_img">Image of a cute little dog drawn using blue lines (shown on success notice pages)</string>
+    <string name="blue_border_img">Curved blue border line used for decorative and aesthetic appeal on pages containing notification content</string>
 
-    <!-- Strings related to login -->
+    <!-- Strings related to login screen -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="sign_in_btn">Sign in</string>
     <string name="create_acct_link">Create an Account</string>
+
+    <!-- Strings related to Create Account screen -->
+    <string name="create_acct_title">Create Account</string>
+    <string name="create_acct_email">Enter your email address</string>
+    <string name="create_acct_pw">Enter your password</string>
+    <string name="create_acct_pw_confirm">Re-enter your password</string>
+    <string name="create_acct_btn">Create</string>
+
+    <!-- Strings related to Create Account Success screen-->
+    <string name="success_notice">Success!</string>
+    <string name="create_acct_success_notice">Your account has been successfully created.\nClick here to return to login page.</string>
 
 </resources>
