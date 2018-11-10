@@ -29,9 +29,9 @@
     <!-- Strings related to Create Account Success screen-->
     <string name="success_notice">Success!</string>
     <string name="create_acct_success_notice">Your account has been successfully created.\nClick here to return to login page.</string>
-    <string name="title_activity_dog_directory">DogDirectory</string>
 
     <!-- Strings related to Dog Directory Screen -->
+    <string name="title_activity_dog_directory">Dog Directory</string>
     <string name="dog1_contentDesc">Beyonce: Cute, medium-build puppy with light-brown, downy fur and an adorable wet nose.</string>
     <string name="dog2_contentDesc">Jay-Z: Fill with text.</string>
     <string name="dog3_contentDesc">Kim: to get rid.</string>
