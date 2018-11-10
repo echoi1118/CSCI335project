@@ -24,8 +24,8 @@
         app:showAsAction="never" />
 
     <item android:id="@+id/about_us"
-        android:title="@string/about_us"
-        android:titleCondensed="@string/about_us"
+        android:title="@string/our_mission"
+        android:titleCondensed="@string/our_mission"
         android:icon="@drawable/ic_about_us"
         android:onClick="onItemClick"
         app:showAsAction="never" />
