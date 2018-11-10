@@ -28,7 +28,7 @@ public class DogDirectory extends AppCompatActivity {
                     case R.id.reservations:
                         mTextMessage.setText(R.string.reservations);
                         return true;
-                    case R.id.about_us:
+                    case R.id.our_mission:
                         mTextMessage.setText(R.string.our_mission);
                         return true;
                 }
