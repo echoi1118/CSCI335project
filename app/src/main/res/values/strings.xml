@@ -1,9 +1,14 @@
 <resources>
     <string name="app_name">CSCI335project</string>
-    <string name="testing">Testing 1,2,3 from trystan
-    </string>
     <string name="favorites">Favorites</string>
     <string name="dogs">Dogs</string>
     <string name="about_us">About Us</string>
     <string name="reservations">Reservations</string>
+    <string name="dog1name">Beyonce</string>
+    <string name="dog2name">Jay-Z</string>
+    <string name="dog3name">Kim</string>
+    <string name="dog4name">Kanye</string>
+    <string name="dog5name">Selena</string>
+    <string name="dog6name">JB</string>
+
 </resources>
