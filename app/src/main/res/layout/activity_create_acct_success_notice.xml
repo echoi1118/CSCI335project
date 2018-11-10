@@ -11,7 +11,7 @@
     <ImageView
         android:id="@+id/rounded_square_bg"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="341dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="24dp"
@@ -41,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
+        android:onClick="goToLoginScreen"
         android:text="@string/create_acct_success_notice"
         android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toBottomOf="@+id/blue_border_img"

@@ -26,7 +26,7 @@
     <string name="create_acct_pw_confirm">Re-enter your password</string>
     <string name="create_acct_btn">Create</string>
 
-    <!-- Strings related to Create Account Success screen-->
+    <!-- Strings related to Create Account Success screen -->
     <string name="success_notice">Success!</string>
     <string name="create_acct_success_notice">Your account has been successfully created.\nClick here to return to login page.</string>
 
