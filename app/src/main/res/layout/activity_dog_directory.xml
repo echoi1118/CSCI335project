@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/dog1"
+        android:id="@+id/dog1text"
         android:layout_width="120dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
