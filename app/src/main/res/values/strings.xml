@@ -8,9 +8,10 @@
 
     <!-- Strings related to images -->
     <string name="logo">Filled circular image containing logo of the Dogs \'R Us application</string>
-    <string name="rounded_square_bg">White rounded square container which acts as the background to the main content</string>
+    <string name="rounded_square_bg">White rounded square container which acts as the background to main content, buttons, etc.</string>
     <string name="little_blue_dog_img">Image of a cute little dog drawn using blue lines (shown on success notice pages)</string>
     <string name="blue_border_img">Curved blue border line used for decorative and aesthetic appeal on pages containing notification content</string>
+    <string name="black_line_img">Simple straight black line used for decorative and aesthetic appeal on pages with textual content</string>
 
     <!-- Strings related to login screen -->
     <string name="prompt_email">Email</string>
@@ -27,7 +28,7 @@
 
     <!-- Strings related to Create Account Success screen -->
     <string name="success_notice">Success!</string>
-    <string name="create_acct_success_notice">Your account has been successfully created.\nClick here to return to login page.</string>
+    <string name="create_acct_success_notice">Your account has been successfully created.\nClick here to sign in.</string>
 
     <!-- Strings related to Dog Directory Screen -->
     <string name="title_activity_dog_directory">Dog Directory</string>
@@ -51,5 +52,14 @@
     <string name="title_activity_kanye">Kanye</string>
     <string name="title_activity_selena">Selena</string>
     <string name="title_activity_jb">JB</string>
+
+    <!-- Strings related to Our Mission Screen -->
+    <string name="our_mission_lbl">Our Mission</string>
+    <string name="mission_stmt_beg"> We here at Dogs \'R Us&#8230;\n
+        Lorem ipsum dolor sit amet,\n
+        consectetur adipiscing elit. Nullam\n
+        eu ornare odio Maeceras odio est.
+    </string>
+    <string name="donate_btn">Donate</string>
 
 </resources>

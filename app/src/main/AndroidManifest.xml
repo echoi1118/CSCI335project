@@ -83,6 +83,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.count.csci335project.DogDirectory" />
         </activity>
+        <activity android:name=".OurMission"></activity>
     </application>
 
 </manifest>
