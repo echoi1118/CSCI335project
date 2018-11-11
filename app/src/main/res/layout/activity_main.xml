@@ -60,6 +60,7 @@
         android:layout_marginBottom="24dp"
         android:background="@drawable/rounded_square_img"
         android:contentDescription="@string/sign_in_btn"
+        android:onClick="goToDogDirectory"
         android:text="@string/sign_in_btn"
         app:layout_constraintBottom_toTopOf="@+id/create_acct_link"
         app:layout_constraintEnd_toEndOf="@+id/pw_login_field"

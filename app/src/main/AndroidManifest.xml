@@ -17,10 +17,10 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".CreateAnAccount"
             android:label="@string/create_acct_title"
@@ -31,13 +31,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
-        <activity
-            android:name=".CreateAcctSuccessNotice" />
-
+        <activity android:name=".CreateAcctSuccessNotice" />
         <activity
             android:name=".DogDirectory"
-            android:label="@string/title_activity_dog_directory"></activity>
+            android:label="@string/title_activity_dog_directory" />
+        <activity
+            android:name=".Beyonce"
+            android:label="@string/title_activity_beyonce"
+            android:parentActivityName=".DogDirectory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.count.csci335project.DogDirectory" />
+        </activity>
     </application>
 
 </manifest>

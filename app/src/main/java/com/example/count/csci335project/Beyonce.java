@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-public class DogDirectory extends AppCompatActivity {
+public class Beyonce extends AppCompatActivity {
 
     private TextView mTextMessage;
 
@@ -42,7 +42,7 @@ public class DogDirectory extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dog_directory);
+        setContentView(R.layout.activity_beyonce);
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
@@ -57,11 +57,6 @@ public class DogDirectory extends AppCompatActivity {
 
     public void goToDogDirectory(View view){
         Intent intent = new Intent(this, DogDirectory.class);
-        startActivity(intent);
-    }
-
-    public void goToBeyonce(View view){
-        Intent intent = new Intent(this, Beyonce.class);
         startActivity(intent);
     }
 
