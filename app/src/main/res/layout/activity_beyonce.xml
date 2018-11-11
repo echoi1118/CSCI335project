@@ -22,7 +22,7 @@
         app:menu="@menu/bottom_nav" />
 
     <ImageView
-        android:id="@+id/Jay_Z_Pic"
+        android:id="@+id/Beyonce_Pic"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
@@ -42,15 +42,18 @@
         android:contentDescription="@string/favorites"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/Jay_Z_Pic"
+        app:layout_constraintTop_toBottomOf="@+id/Beyonce_Pic"
         app:srcCompat="@drawable/ic_favorites" />
 
     <TextView
         android:id="@+id/DogDescription"
         android:layout_width="223dp"
         android:layout_height="101dp"
+        android:fontFamily="casual"
         android:text="@string/dog1_contentDesc"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
         android:translationZ="1dp"
         app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg"
         app:layout_constraintEnd_toEndOf="@+id/rounded_square_bg"
@@ -74,9 +77,6 @@
         app:layout_constraintVertical_bias="0.333"
         app:srcCompat="@drawable/rounded_square_img" />
 
-    <!-- Courtesy of: http://www.clipartpanda.com/categories/decorative-line-clipart
-     "Use these free images for your websites, art projects, reports, and Powerpoint presentations!" -->
-
     <ImageButton
         android:id="@+id/ReserveButton"
         android:layout_width="50dp"
@@ -84,6 +84,7 @@
         android:layout_marginEnd="8dp"
         android:background="@color/colorPrimary"
         android:contentDescription="@string/reservations"
+        android:onClick="passInfoToReservationActivity"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintTop_toTopOf="@+id/FavoriteButton"
         app:srcCompat="@drawable/ic_reservation" />

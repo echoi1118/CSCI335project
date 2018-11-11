@@ -22,7 +22,7 @@
         app:menu="@menu/bottom_nav" />
 
     <ImageView
-        android:id="@+id/Jay_Z_Pic"
+        android:id="@+id/Kanye_Pic"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
@@ -42,7 +42,7 @@
         android:contentDescription="@string/favorites"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
-        app:layout_constraintTop_toBottomOf="@+id/Jay_Z_Pic"
+        app:layout_constraintTop_toBottomOf="@+id/Kanye_Pic"
         app:srcCompat="@drawable/ic_favorites" />
 
     <TextView
