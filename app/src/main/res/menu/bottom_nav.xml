@@ -6,7 +6,7 @@
         android:title="@string/dogs"
         android:titleCondensed="@string/dogs"
         android:icon="@drawable/ic_dogs"
-        android:onClick="onItemClick"/>
+        android:onClick="goToDogDirectory"/>
 
     <item android:id="@+id/favorites"
     android:title="@string/favorites"
