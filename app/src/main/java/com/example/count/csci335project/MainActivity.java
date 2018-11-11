@@ -13,12 +13,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    /** Called when the user clicks the Create an Account button */
+    /** Called when the user clicks the Create an Account link */
     public void goToCreateAccount(View view) {
         Intent intent = new Intent(this, CreateAnAccount.class);
         startActivity(intent);
     }
-
 
     public void goToDogDirectory(View view){
         Intent intent = new Intent(this, DogDirectory.class);

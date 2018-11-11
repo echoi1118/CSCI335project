@@ -33,9 +33,9 @@
     <!-- Strings related to Dog Directory Screen -->
     <string name="title_activity_dog_directory">Dog Directory</string>
     <string name="dog1_contentDesc">Beyonce: Cute, medium-build puppy with light-brown, downy fur and an adorable wet nose.</string>
-    <string name="dog2_contentDesc">Jay-Z: Fill with text.</string>
-    <string name="dog3_contentDesc">Kim: to get rid.</string>
-    <string name="dog4_contentDesc">Kanye: of .</string>
+    <string name="dog2_contentDesc">Jay-Z: A chihuahua with an attitude.</string>
+    <string name="dog3_contentDesc">Kim: What is that? Is that a husky?</string>
+    <string name="dog4_contentDesc">Kanye: </string>
     <string name="dog5_contentDesc">Selena: contentDescription warnings.</string>
     <string name="dog6_contentDesc">JB: .</string>
     <string name="dog1name">Beyonce</string>
@@ -47,7 +47,7 @@
 
 
     <string name="title_activity_beyonce">Beyonce</string>
-    <string name="title_activity_jay_z">JayZ</string>
+    <string name="title_activity_jay_z">Jay-Z</string>
     <string name="title_activity_kim">Kim</string>
     <string name="title_activity_kanye">Kanye</string>
     <string name="title_activity_selena">Selena</string>
