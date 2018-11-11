@@ -9,10 +9,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
-
 public class Beyonce extends AppCompatActivity {
 
+    public static final String EXTRA_MESSAGE = "Test string";//
     private TextView mTextMessage;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener;
@@ -64,7 +63,8 @@ public class Beyonce extends AppCompatActivity {
     /** Beyonce - Reservation button used to pass data*/
     public void passInfoToReservationActivity(View view) {
         Intent intent = new Intent(this, ReservationActivity.class);
-        TextView descOfDog = (TextView) findViewById(R.id.DogDescription);
+        TextView descOfDog = findViewById(R.id.DogDescription);
+
         String message = descOfDog.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);

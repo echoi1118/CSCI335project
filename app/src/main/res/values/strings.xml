@@ -62,4 +62,7 @@
     </string>
     <string name="donate_btn">Donate</string>
 
+    <!-- Strings related to Reservation Screens -->
+    <string name="dogDesc">placeholder text</string>
+
 </resources>
