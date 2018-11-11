@@ -146,7 +146,7 @@
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dog2image" />
+        app:srcCompat="@drawable/dog1image" />
 
     <ImageButton
         android:id="@+id/dog2button"
@@ -157,13 +157,14 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:contentDescription="@string/dog2_contentDesc"
+        android:contentDescription="@string/dog1_contentDesc"
+        android:onClick="goToJayZ"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/dog1image" />
+        app:srcCompat="@drawable/dog2image" />
 
     <ImageButton
         android:id="@+id/dog3button"
@@ -174,6 +175,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog3_contentDesc"
+        android:onClick="goToKim"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -190,6 +192,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog4_contentDesc"
+        android:onClick="goToKanye"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -206,6 +209,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog5_contentDesc"
+        android:onClick="goToSelena"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -222,6 +226,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog6_contentDesc"
+        android:onClick="goToJB"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toEndOf="parent"

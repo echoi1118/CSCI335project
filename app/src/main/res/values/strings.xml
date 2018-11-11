@@ -43,9 +43,13 @@
     <string name="dog4name">Kanye</string>
     <string name="dog5name">Selena</string>
     <string name="dog6name">JB</string>
+
+
     <string name="title_activity_beyonce">Beyonce</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_jay_z">JayZ</string>
+    <string name="title_activity_kim">Kim</string>
+    <string name="title_activity_kanye">Kanye</string>
+    <string name="title_activity_selena">Selena</string>
+    <string name="title_activity_jb">JB</string>
 
 </resources>

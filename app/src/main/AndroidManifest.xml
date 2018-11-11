@@ -43,6 +43,46 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.count.csci335project.DogDirectory" />
         </activity>
+        <activity
+            android:name=".JayZ"
+            android:label="@string/title_activity_jay_z"
+            android:parentActivityName=".DogDirectory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.count.csci335project.DogDirectory" />
+        </activity>
+        <activity
+            android:name=".Kim"
+            android:label="@string/title_activity_kim"
+            android:parentActivityName=".DogDirectory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.count.csci335project.DogDirectory" />
+        </activity>
+        <activity
+            android:name=".Kanye"
+            android:label="@string/title_activity_kanye"
+            android:parentActivityName=".DogDirectory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.count.csci335project.DogDirectory" />
+        </activity>
+        <activity
+            android:name=".Selena"
+            android:label="@string/title_activity_selena"
+            android:parentActivityName=".DogDirectory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.count.csci335project.DogDirectory" />
+        </activity>
+        <activity
+            android:name=".JB"
+            android:label="@string/title_activity_jb"
+            android:parentActivityName=".DogDirectory">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.count.csci335project.DogDirectory" />
+        </activity>
     </application>
 
 </manifest>
