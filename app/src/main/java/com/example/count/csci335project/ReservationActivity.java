@@ -89,6 +89,26 @@ public class ReservationActivity extends AppCompatActivity {
 
     }
 
+    public void goToDogDirectory(View view){
+        Intent intent = new Intent(this, DogDirectory.class);
+        startActivity(intent);
+    }
+
+    public void goToFavorites(View view){
+        Intent intent = new Intent(this, Favorites.class);
+        startActivity(intent);
+    }
+
+    public void goToOurMission(View view){
+        Intent intent = new Intent(this, OurMission.class);
+        startActivity(intent);
+    }
+
+    public void goToMyReservations(View view){
+        Intent intent = new Intent(this, MyReservations.class);
+        startActivity(intent);
+    }
+
 
 
 

@@ -11,46 +11,12 @@ import android.widget.TextView;
 
 public class JB extends AppCompatActivity {
 
-    private TextView mTextMessage;
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener;
-
-    {
-        mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.dogs:
-                        mTextMessage.setText(R.string.dogs);
-                        return true;
-                    case R.id.favorites:
-                        mTextMessage.setText(R.string.favorites);
-                        return true;
-                    case R.id.reservations:
-                        mTextMessage.setText(R.string.reservations);
-                        return true;
-                    case R.id.our_mission:
-                        mTextMessage.setText(R.string.our_mission);
-                        return true;
-                }
-                return false;
-            }
-        };
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jb);
-
-        mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.bottom_navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-    }
-
-    public void onItemClick(MenuItem item)
-    {
 
 
     }
@@ -59,6 +25,23 @@ public class JB extends AppCompatActivity {
         Intent intent = new Intent(this, DogDirectory.class);
         startActivity(intent);
     }
+
+    public void goToFavorites(View view){
+        Intent intent = new Intent(this, Favorites.class);
+        startActivity(intent);
+    }
+
+    public void goToOurMission(View view){
+        Intent intent = new Intent(this, OurMission.class);
+        startActivity(intent);
+    }
+
+    public void goToMyReservations(View view){
+        Intent intent = new Intent(this, MyReservations.class);
+        startActivity(intent);
+    }
+
+
 
 }
 
