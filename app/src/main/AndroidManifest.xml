@@ -85,7 +85,7 @@
         </activity>
         <activity android:name=".OurMission" />
         <activity android:name=".ReservationActivity" />
-        <activity android:name=".Favorites"></activity>
+        <activity android:name=".Favorites" />
     </application>
 
 </manifest>
