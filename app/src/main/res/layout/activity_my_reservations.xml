@@ -11,7 +11,7 @@
         android:id="@+id/deleteButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete Reservaion"
+        android:text="@string/del_reserve"
         app:layout_constraintBottom_toBottomOf="@+id/dogBorder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -22,6 +22,7 @@
         android:layout_height="175dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
+        android:contentDescription="@string/rounded_square_bg"
         android:translationZ="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -91,6 +92,7 @@
         android:layout_height="175dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/rounded_square_bg"
         android:translationZ="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/deleteButton"
@@ -100,7 +102,7 @@
         android:id="@+id/deleteButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete Reservaion"
+        android:text="@string/del_reserve"
         app:layout_constraintBottom_toBottomOf="@+id/dogBorder1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

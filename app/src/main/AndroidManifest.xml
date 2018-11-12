@@ -25,33 +25,34 @@
             android:name=".CreateAnAccount"
             android:label="@string/create_acct_title"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".CreateAcctSuccessNotice" />
+        <activity android:name=".CreateAcctSuccessNotice"
+            android:parentActivityName=".CreateAnAccount"/>
         <activity
             android:name=".DogDirectory"
             android:label="@string/title_activity_dog_directory" />
         <activity
             android:name=".Beyonce"
-            android:label="@string/title_activity_beyonce"
+            android:label="@string/dog1name"
             android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".JayZ"
-            android:label="@string/title_activity_jay_z"
+            android:label="@string/dog2name"
             android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".Kim"
-            android:label="@string/title_activity_kim"
+            android:label="@string/dog3name"
             android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".Kanye"
-            android:label="@string/title_activity_kanye"
+            android:label="@string/dog4name"
             android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".Selena"
-            android:label="@string/title_activity_selena"
+            android:label="@string/dog5name"
             android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".JB"
-            android:label="@string/title_activity_jb"
+            android:label="@string/dog6name"
             android:parentActivityName=".DogDirectory" />
         <activity android:name=".OurMission" />
         <activity android:name=".ReservationActivity" />

@@ -88,9 +88,9 @@
         app:layout_constraintTop_toTopOf="@+id/rounded_square_bg2" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/reserve_btn"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginBottom="8dp"
         android:text="@string/reserve"
         app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg2"
