@@ -35,8 +35,8 @@
     <string name="dog1_contentDesc">Beyonce: Cute, medium-build puppy with light-brown, downy fur and an adorable wet nose.</string>
     <string name="dog2_contentDesc">Jay-Z: A chihuahua with an attitude.</string>
     <string name="dog3_contentDesc">Kim: What is that? Is that a husky?</string>
-    <string name="dog4_contentDesc">Kanye: Fill with text</string>
-    <string name="dog5_contentDesc">Selena: contentDescription warnings.</string>
+    <string name="dog4_contentDesc">Kanye: I don\'t know what I am, but if you take me home, I love you long time. Arf! Arf!</string>
+    <string name="dog5_contentDesc">Selena: Is that a hot dog? Why, yes she is. And she\'s the hottest dog around.</string>
     <string name="dog6_contentDesc">JB: Fill with text</string>
     <string name="dog1name">Beyonce</string>
     <string name="dog2name">Jay-Z</string>
@@ -62,9 +62,19 @@
     </string>
     <string name="donate_btn">Donate</string>
 
+    <!-- Strings related to Donation Screen -->
+    <string name="cardholder_name">Jane Doe</string>
+    <string name="cc_number">XXXX-XXXX-XXXX-XXXX</string>
+    <string name="card_number">Enter credit card number</string>
+    <string name="csv">CSV</string>
+    <string name="submit_donation_btn">Donate</string>
+    <string name="thank_you_msg">Woof woof!\nThank you for partnering with us.</string>
+
+
     <!-- Strings related to Reservation Screens -->
     <string name="dogDesc">placeholder text</string>
     <string name="reserve">Reserve</string>
     <string name="select_date">Select a date for pickup</string>
+
 
 </resources>

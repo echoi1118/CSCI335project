@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".DonateActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/donate_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="126dp"
+        android:contentDescription="@string/logo"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/cardholder_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/cardholder_name"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <EditText
+        android:id="@+id/cc_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/cc_number"
+        android:inputType="number"
+        android:text="@string/card_number"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <EditText
+        android:id="@+id/csv_number"
+        android:layout_width="114dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/csv"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="323dp" />
+
+    <Button
+        android:id="@+id/submit_donation_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_square_img"
+        android:onClick="goToDonateSuccessScreen"
+        android:text="@string/submit_donation_btn"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="424dp" />
+
+</android.support.constraint.ConstraintLayout>
