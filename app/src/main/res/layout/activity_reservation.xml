@@ -2,17 +2,103 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:backgroundTint="@color/colorPrimary"
     tools:context=".ReservationActivity">
 
-    <TextView
-        android:id="@+id/dogDesc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="125dp"
-        android:text="@string/dogDesc"
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        app:itemIconTint="@color/design_default_color_primary"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:menu="@menu/bottom_nav" />
+
+    <ImageView
+        android:id="@+id/Jay_Z_Pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/dog2_contentDesc"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg"
+        app:layout_constraintEnd_toStartOf="@+id/DogDescription"
+        app:layout_constraintStart_toStartOf="@+id/rounded_square_bg"
+        app:layout_constraintTop_toTopOf="@+id/rounded_square_bg"
+        app:srcCompat="@drawable/dog2image" />
+
+    <TextView
+        android:id="@+id/DogDescription"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/dog2_contentDesc"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:translationZ="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg"
+        app:layout_constraintEnd_toEndOf="@+id/rounded_square_bg"
+        app:layout_constraintTop_toTopOf="@+id/rounded_square_bg" />
+
+    <ImageView
+        android:id="@+id/rounded_square_bg"
+        android:layout_width="365dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/rounded_square_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_square_img" />
+
+    <ImageView
+        android:id="@+id/rounded_square_bg2"
+        android:layout_width="365dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="@string/rounded_square_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rounded_square_bg"
+        app:srcCompat="@drawable/rounded_square_img" />
+
+    <TextView
+        android:id="@+id/DateSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/select_date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="@+id/rounded_square_bg2"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/rounded_square_bg2"
+        app:layout_constraintTop_toTopOf="@+id/rounded_square_bg2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/reserve"
+        app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg2"
+        app:layout_constraintEnd_toEndOf="@+id/rounded_square_bg2"
+        app:layout_constraintStart_toStartOf="@+id/rounded_square_bg2" />
+
+
 </android.support.constraint.ConstraintLayout>
+
+
+
