@@ -58,12 +58,13 @@
         <activity
             android:name=".Favorites"
             android:label="@string/favorites" />
-        <activity android:name=".DonateActivity"
+        <activity
+            android:name=".DonateActivity"
             android:parentActivityName=".OurMission" />
-
-        <activity android:name=".DonateSuccessNotice"
-            android:parentActivityName=".DonateActivity">
-        </activity>
+        <activity
+            android:name=".DonateSuccessNotice"
+            android:parentActivityName=".DonateActivity"></activity>
+        <activity android:name=".MyReservations"/>
     </application>
 
 </manifest>

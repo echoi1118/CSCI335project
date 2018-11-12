@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MyReservations">
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Reservaion"
+        app:layout_constraintBottom_toBottomOf="@+id/dogBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/dogBorder"
+        android:layout_width="375dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="32dp"
+        android:translationZ="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_square_img" />
+
+    <ImageButton
+        android:id="@+id/kanye_button2"
+        android:layout_width="350dp"
+        android:layout_height="124dp"
+        android:contentDescription="@string/dog4_contentDesc"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dogBorder"
+        app:srcCompat="@drawable/dog4image" />
+
+    <TextView
+        android:id="@+id/dogDescription"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/dog5_contentDesc"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/selena_button2"
+        app:layout_constraintEnd_toEndOf="@+id/selena_button2"
+        app:layout_constraintTop_toTopOf="@+id/selena_button2" />
+
+    <ImageButton
+        android:id="@+id/selena_button2"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/dog5_contentDesc"
+        android:scaleType="fitStart"
+        android:translationZ="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dogBorder1"
+        app:srcCompat="@drawable/dog5image" />
+
+    <TextView
+        android:id="@+id/dogDescription2"
+        android:layout_width="210dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/dog4_contentDesc"
+        app:layout_constraintBottom_toBottomOf="@+id/kanye_button2"
+        app:layout_constraintEnd_toEndOf="@+id/kanye_button2"
+        app:layout_constraintTop_toTopOf="@+id/kanye_button2" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        app:itemIconTint="@color/design_default_color_primary"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav" />
+
+    <ImageView
+        android:id="@+id/dogBorder1"
+        android:layout_width="375dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:translationZ="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteButton"
+        app:srcCompat="@drawable/rounded_square_img" />
+
+    <Button
+        android:id="@+id/deleteButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Reservaion"
+        app:layout_constraintBottom_toBottomOf="@+id/dogBorder1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
