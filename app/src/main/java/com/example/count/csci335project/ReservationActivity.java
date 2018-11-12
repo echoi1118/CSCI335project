@@ -9,13 +9,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class ReservationActivity extends AppCompatActivity {
 
+    public String date;
 
     private TextView mDisplayDate;
     private DatePickerDialog.OnDateSetListener mDateSetListener;
+    public static final String DOG_NAME_RESERVED = "com.example.myfirstapp.DOG_NAME_MESSAGE";
+    public static final String DATE_RESERVED = "com.example.myfirstapp.DATE_MESSAGE";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,22 +60,38 @@ public class ReservationActivity extends AppCompatActivity {
             }
         });
 
-
         mDateSetListener = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
                 month = month + 1;
 
-                String date = month + "/" + day +"/" + year;
+                date = month + "/" + day +"/" + year;
                 mDisplayDate.setText(date);
             }
         };
 
+    }
 
 
+    public void onReserve(View view){
+
+
+
+        Intent intent = new Intent(this, MyReservations.class);
+
+        TextView textView = findViewById(R.id.dog_name);
+        String dogName = textView.getText().toString();
+        intent.putExtra(DOG_NAME_RESERVED, dogName);
+
+        intent.putExtra(DATE_RESERVED, date);
+
+        startActivity(intent);
 
 
     }
+
+
+
 
 
 }

@@ -52,12 +52,12 @@
         android:layout_width="365dp"
         android:layout_height="175dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
         android:contentDescription="@string/rounded_square_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dog_name"
         app:srcCompat="@drawable/rounded_square_img" />
 
     <ImageView
@@ -92,10 +92,21 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginBottom="8dp"
+        android:onClick="onReserve"
         android:text="@string/reserve"
         app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg2"
         app:layout_constraintEnd_toEndOf="@+id/rounded_square_bg2"
         app:layout_constraintStart_toStartOf="@+id/rounded_square_bg2" />
+
+    <TextView
+        android:id="@+id/dog_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dog2name"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>
