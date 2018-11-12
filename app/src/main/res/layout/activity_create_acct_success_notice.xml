@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteY="81dp">
 
     <ImageView
-        android:id="@+id/rounded_square_bg"
+        android:id="@+id/rounded_square_bg2"
         android:layout_width="0dp"
         android:layout_height="341dp"
         android:layout_marginStart="24dp"
@@ -33,7 +33,7 @@
         android:contentDescription="@string/blue_border_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/rounded_square_bg"
+        app:layout_constraintTop_toTopOf="@+id/rounded_square_bg2"
         app:srcCompat="@drawable/blue_border_img" />
 
     <TextView
