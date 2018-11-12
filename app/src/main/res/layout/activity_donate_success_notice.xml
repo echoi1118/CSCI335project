@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".DonateSuccessNotice"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/rounded_white_sq_bg"
+        android:layout_width="0dp"
+        android:layout_height="334dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/rounded_square_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rounded_square_img" />
+
+    <ImageView
+        android:id="@+id/little_blue_dog"
+        android:layout_width="94dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="26dp"
+        android:contentDescription="@string/little_blue_dog_img"
+        app:layout_constraintBottom_toTopOf="@+id/thank_you_msg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/little_blue_dog_img" />
+
+    <TextView
+        android:id="@+id/thank_you_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="34dp"
+        android:fontFamily="casual"
+        android:text="@string/thank_you_msg"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/donation_success_black_border_img"
+        app:layout_constraintEnd_toEndOf="@+id/rounded_white_sq_bg"
+        app:layout_constraintTop_toBottomOf="@+id/little_blue_dog" />
+
+    <ImageView
+        android:id="@+id/donation_success_black_border_img"
+        android:layout_width="199dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="159dp"
+        android:contentDescription="@string/black_line_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thank_you_msg"
+        app:srcCompat="@drawable/black_line_img" />
+</android.support.constraint.ConstraintLayout>

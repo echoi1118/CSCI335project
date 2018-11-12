@@ -62,7 +62,17 @@
     </string>
     <string name="donate_btn">Donate</string>
 
+    <!-- Strings related to Donation Screen -->
+    <string name="cardholder_name">Jane Doe</string>
+    <string name="cc_number">XXXX-XXXX-XXXX-XXXX</string>
+    <string name="card_number">Enter credit card number</string>
+    <string name="csv">CSV</string>
+    <string name="submit_donation_btn">Donate</string>
+    <string name="thank_you_msg">Woof woof!\nThank you for partnering with us.</string>
+
+
     <!-- Strings related to Reservation Screens -->
     <string name="dogDesc">placeholder text</string>
+
 
 </resources>

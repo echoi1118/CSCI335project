@@ -24,8 +24,7 @@
         <activity
             android:name=".CreateAnAccount"
             android:label="@string/create_acct_title"
-            android:parentActivityName=".MainActivity">
-        </activity>
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".CreateAcctSuccessNotice" />
         <activity
             android:name=".DogDirectory"
@@ -33,37 +32,38 @@
         <activity
             android:name=".Beyonce"
             android:label="@string/title_activity_beyonce"
-            android:parentActivityName=".DogDirectory">
-        </activity>
+            android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".JayZ"
             android:label="@string/title_activity_jay_z"
-            android:parentActivityName=".DogDirectory">
-        </activity>
+            android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".Kim"
             android:label="@string/title_activity_kim"
-            android:parentActivityName=".DogDirectory">
-        </activity>
+            android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".Kanye"
             android:label="@string/title_activity_kanye"
-            android:parentActivityName=".DogDirectory">
-        </activity>
+            android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".Selena"
             android:label="@string/title_activity_selena"
-            android:parentActivityName=".DogDirectory">
-        </activity>
+            android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".JB"
             android:label="@string/title_activity_jb"
-            android:parentActivityName=".DogDirectory">
-        </activity>
+            android:parentActivityName=".DogDirectory" />
         <activity android:name=".OurMission" />
         <activity android:name=".ReservationActivity" />
-        <activity android:name=".Favorites"
-            android:label="@string/favorites"/>
+        <activity
+            android:name=".Favorites"
+            android:label="@string/favorites" />
+        <activity android:name=".DonateActivity"
+            android:parentActivityName=".OurMission" />
+
+        <activity android:name=".DonateSuccessNotice"
+            android:parentActivityName=".DonateActivity">
+        </activity>
     </application>
 
 </manifest>

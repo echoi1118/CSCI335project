@@ -5,17 +5,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class OurMission extends AppCompatActivity {
+public class DonateActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_our_mission);
+        setContentView(R.layout.activity_donate);
     }
 
-    /** Called when the user clicks the "Donate" button (to navigate to donation screen) */
-    public void goToDonateScreen(View view) {
-        Intent intent = new Intent(this, DonateActivity.class);
+    /** Called when the user clicks the "Donate" button */
+    public void goToDonateSuccessScreen(View view) {
+        Intent intent = new Intent(this, DonateSuccessNotice.class);
         startActivity(intent);
     }
 }
