@@ -84,7 +84,8 @@
                 android:value="com.example.count.csci335project.DogDirectory" />
         </activity>
         <activity android:name=".OurMission" />
-        <activity android:name=".ReservationActivity"></activity>
+        <activity android:name=".ReservationActivity" />
+        <activity android:name=".Favorites"></activity>
     </application>
 
 </manifest>
