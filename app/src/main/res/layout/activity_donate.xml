@@ -11,50 +11,63 @@
     <ImageView
         android:id="@+id/donate_logo"
         android:layout_width="wrap_content"
-        android:layout_height="126dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
         android:contentDescription="@string/logo"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_constraintBottom_toTopOf="@+id/cardholder_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/cardholder_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
         android:ems="10"
         android:hint="@string/cardholder_name"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintBottom_toTopOf="@+id/cc_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donate_logo" />
 
     <EditText
         android:id="@+id/cc_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
         android:ems="10"
         android:hint="@string/cc_number"
         android:inputType="number"
         android:text="@string/card_number"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="254dp" />
+        app:layout_constraintBottom_toTopOf="@+id/csv_number"
+        app:layout_constraintStart_toStartOf="@+id/cardholder_name"
+        app:layout_constraintTop_toBottomOf="@+id/cardholder_name" />
 
     <EditText
         android:id="@+id/csv_number"
         android:layout_width="114dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
         android:ems="10"
         android:hint="@string/csv"
         android:inputType="number"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="323dp" />
+        app:layout_constraintBottom_toTopOf="@+id/submit_donation_btn"
+        app:layout_constraintStart_toStartOf="@+id/cc_number"
+        app:layout_constraintTop_toBottomOf="@+id/cc_number" />
 
     <Button
         android:id="@+id/submit_donation_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
         android:background="@drawable/rounded_square_img"
         android:onClick="goToDonateSuccessScreen"
         android:text="@string/submit_donation_btn"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="424dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/csv_number" />
 
 </android.support.constraint.ConstraintLayout>
