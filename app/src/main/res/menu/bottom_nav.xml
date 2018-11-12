@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/dogs"
         android:title="@string/dogs"
@@ -25,7 +24,5 @@
         android:titleCondensed="@string/our_mission"
         android:icon="@drawable/ic_about_us"
         android:onClick="onItemClick"/>
-
-
 
 </menu>

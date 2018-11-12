@@ -53,6 +53,8 @@
         eu ornare odio Maeceras odio est.
     </string>
     <string name="donate_btn">Donate</string>
+    <string name="visa">Visa</string>
+    <string name="mc">Master Card</string>
 
     <!-- Strings related to Donation Screen -->
     <string name="cardholder_name">Jane Doe</string>

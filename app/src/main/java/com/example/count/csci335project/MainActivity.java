@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goToDogDirectory(View view){
+    public void goToDogDirectory(View view) {
         Intent intent = new Intent(this, DogDirectory.class);
         startActivity(intent);
     }
