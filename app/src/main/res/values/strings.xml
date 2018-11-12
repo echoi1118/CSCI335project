@@ -33,11 +33,11 @@
     <!-- Strings related to Dog Directory Screen -->
     <string name="title_activity_dog_directory">Dog Directory</string>
     <string name="dog1_contentDesc">Cute, medium-build puppy with light-brown, downy fur and an adorable wet nose.</string>
-    <string name="dog2_contentDesc">Jay-Z: A chihuahua with an attitude.</string>
-    <string name="dog3_contentDesc">Kim: What is that? Is that a husky?</string>
-    <string name="dog4_contentDesc">Kanye: I don\'t know what I am, but if you take me home, I love you long time. Arf! Arf!</string>
-    <string name="dog5_contentDesc">Selena: Is that a hot dog? Why, yes she is. And she\'s the hottest dog around.</string>
-    <string name="dog6_contentDesc">JB: Fill with text</string>
+    <string name="dog2_contentDesc">I\'m a sleepy little chihuahua with an attitude. Won\'t you take me home?</string>
+    <string name="dog3_contentDesc">What is that? Is that a husky?</string>
+    <string name="dog4_contentDesc">I don\'t know what I am, but if you take me home, I love you long time. Arf! Arf!</string>
+    <string name="dog5_contentDesc">Is that a hot dog? Why, yes she is. And she\'s the hottest dog around.</string>
+    <string name="dog6_contentDesc">Do I look a little hairy to you? You should take me home and give me a haircut.</string>
     <string name="dog1name">Beyonce</string>
     <string name="dog2name">Jay-Z</string>
     <string name="dog3name">Kim</string>
