@@ -70,4 +70,8 @@
     <string name="del_reserve">Delete Reservation</string>
 
 
+    <string name="add_favorites">Add to Favorites</string>
+    <string name="reserve_button">Reserve this Dog</string>
+
+
 </resources>

@@ -10,14 +10,11 @@
     tools:layout_editor_absoluteY="81dp">
 
 
-
     <ImageView
         android:id="@+id/Kim_Pic"
-        android:layout_width="0dp"
-        android:layout_height="386dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="417dp"
+        android:layout_height="410dp"
         android:contentDescription="@string/dog3_contentDesc"
-        app:layout_constraintBottom_toTopOf="@+id/FavoriteButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -25,74 +22,70 @@
 
     <ImageButton
         android:id="@+id/FavoriteButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="133dp"
-        android:layout_marginEnd="11dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
         android:background="@color/white"
         android:contentDescription="@string/favorites"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_button_background"
-        app:layout_constraintEnd_toStartOf="@+id/ReserveButton"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/Kim_Pic"
         app:srcCompat="@drawable/ic_favorites" />
 
     <TextView
         android:id="@+id/DogDescription"
         android:layout_width="273dp"
-        android:layout_height="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:fontFamily="casual"
         android:text="@string/dog3_contentDesc"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="@color/white"
         android:translationZ="1dp"
-        app:layout_constraintEnd_toStartOf="@+id/ReserveButton"
-        app:layout_constraintStart_toStartOf="@+id/ReserveButton"
-        app:layout_constraintTop_toBottomOf="@+id/kim_name" />
+        app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/rounded_square_bg2"
-        android:layout_width="0dp"
-        android:layout_height="131dp"
-        android:alpha=".5"
+        android:layout_width="411dp"
+        android:layout_height="114dp"
+        android:alpha=".6"
         android:contentDescription="@string/rounded_square_bg"
         android:tint="@android:color/black"
-        app:layout_constraintBottom_toTopOf="@+id/DogDescription"
+        app:layout_constraintBottom_toBottomOf="@+id/Kim_Pic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/DogDescription"
         app:srcCompat="@drawable/rounded_square_img" />
 
     <ImageButton
         android:id="@+id/ReserveButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="140dp"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="28dp"
         android:background="@color/white"
         android:contentDescription="@string/reservations"
-        app:layout_constraintBottom_toBottomOf="@+id/FavoriteButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/FavoriteButton"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/FavoriteButton"
         app:srcCompat="@drawable/ic_reservation" />
 
     <TextView
         android:id="@+id/kim_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="257dp"
-        android:layout_marginBottom="11dp"
+        android:layout_width="58dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:fontFamily="casual"
         android:text="@string/dog3name"
         android:textColor="@color/white"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/DogDescription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/rounded_square_bg2" />
 
 
     <android.support.constraint.Guideline
@@ -196,6 +189,25 @@
         android:text="@string/about_us"
         app:layout_constraintStart_toEndOf="@+id/my_reservations_text"
         app:layout_constraintTop_toBottomOf="@+id/our_mission_button" />
+
+
+    <TextView
+        android:id="@+id/add_favorites_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/add_favorites"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/FavoriteButton" />
+
+    <TextView
+        android:id="@+id/reserve_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/reserve_button"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/ReserveButton" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -12,11 +12,9 @@
 
     <ImageView
         android:id="@+id/JB_Pic"
-        android:layout_width="match_parent"
-        android:layout_height="385dp"
-        android:layout_marginBottom="12dp"
+        android:layout_width="413dp"
+        android:layout_height="407dp"
         android:contentDescription="@string/dog6_contentDesc"
-        app:layout_constraintBottom_toTopOf="@+id/FavoriteButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -43,21 +41,20 @@
         android:id="@+id/rounded_square_bg2"
         android:layout_width="match_parent"
         android:layout_height="131dp"
-        android:layout_marginBottom="12dp"
-        android:alpha=".5"
+        android:alpha=".6"
         android:contentDescription="@string/rounded_square_bg"
         android:tint="@android:color/black"
-        app:layout_constraintBottom_toTopOf="@+id/FavoriteButton"
+        app:layout_constraintBottom_toBottomOf="@+id/JB_Pic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/rounded_square_img" />
 
     <ImageButton
         android:id="@+id/FavoriteButton"
-        android:layout_width="50dp"
+        android:layout_width="70dp"
         android:layout_height="50dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
         android:background="@color/white"
         android:contentDescription="@string/favorites"
         android:textAlignment="center"
@@ -67,9 +64,9 @@
 
     <ImageButton
         android:id="@+id/ReserveButton"
-        android:layout_width="50dp"
+        android:layout_width="70dp"
         android:layout_height="50dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="28dp"
         android:background="@color/white"
         android:contentDescription="@string/reservations"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -193,6 +190,25 @@
         android:text="@string/about_us"
         app:layout_constraintStart_toEndOf="@+id/my_reservations_text"
         app:layout_constraintTop_toBottomOf="@+id/our_mission_button" />
+
+
+    <TextView
+        android:id="@+id/add_favorites_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/add_favorites"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/FavoriteButton" />
+
+    <TextView
+        android:id="@+id/reserve_button_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/reserve_button"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/ReserveButton" />
 
 
 </android.support.constraint.ConstraintLayout>
