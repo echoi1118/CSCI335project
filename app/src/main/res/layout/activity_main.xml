@@ -12,6 +12,7 @@
         android:id="@+id/logo_img"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="30dp"
         android:background="@color/colorPrimary"
         android:contentDescription="@string/logo"
