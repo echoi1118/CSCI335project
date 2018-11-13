@@ -52,7 +52,7 @@
         consectetur adipiscing elit. Nullam\n
         eu ornare odio Maeceras odio est.
     </string>
-    <string name="donate_btn">Donate</string>
+
 
     <!-- Strings related to Donation Screen -->
     <string name="cardholder_name">Jane Doe</string>
@@ -61,7 +61,9 @@
     <string name="csv">CSV</string>
     <string name="submit_donation_btn">Donate</string>
     <string name="thank_you_msg">Woof woof!\nThank you for partnering with us.</string>
-
+    <string name="visa">Visa</string>
+    <string name="mc">Master Card</string>
+    <string name="donate_btn">Donate</string>
 
     <!-- Strings related to Reservation Screens -->
     <string name="dogDesc">placeholder text</string>
@@ -69,7 +71,7 @@
     <string name="select_date">Select a date for pickup</string>
     <string name="del_reserve">Delete Reservation</string>
 
-
+    <!-- Strings related to Dog Specs screens -->
     <string name="add_favorites">Add to Favorites</string>
     <string name="reserve_button">Reserve this Dog</string>
 
