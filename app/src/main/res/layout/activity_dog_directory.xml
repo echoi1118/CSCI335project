@@ -9,12 +9,12 @@
 
     <TextView
         android:id="@+id/dog1text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog1name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -25,12 +25,12 @@
 
     <TextView
         android:id="@+id/dog5text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog5name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -41,12 +41,12 @@
 
     <TextView
         android:id="@+id/dog6text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog6name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -57,12 +57,12 @@
 
     <TextView
         android:id="@+id/dog4text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog4name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -73,12 +73,12 @@
 
     <TextView
         android:id="@+id/dog3text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog3name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -89,12 +89,12 @@
 
     <TextView
         android:id="@+id/dog2text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog2name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -108,29 +108,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="150dp" />
+        app:layout_constraintGuide_begin="175dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="300dp" />
+        app:layout_constraintGuide_begin="350dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="450dp" />
+        app:layout_constraintGuide_begin="525dp" />
 
     <ImageButton
         android:id="@+id/dog1button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog1_contentDesc"
         android:onClick="goToBeyonce"
@@ -143,11 +143,10 @@
 
     <ImageButton
         android:id="@+id/dog2button"
-        style="@android:style/Widget.Material.ImageButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog1_contentDesc"
@@ -161,11 +160,11 @@
 
     <ImageButton
         android:id="@+id/dog3button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog3_contentDesc"
         android:onClick="goToKim"
@@ -178,9 +177,9 @@
 
     <ImageButton
         android:id="@+id/dog4button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
@@ -195,11 +194,11 @@
 
     <ImageButton
         android:id="@+id/dog5button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog5_contentDesc"
         android:onClick="goToSelena"
@@ -212,9 +211,9 @@
 
     <ImageButton
         android:id="@+id/dog6button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
