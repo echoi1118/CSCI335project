@@ -9,12 +9,12 @@
 
     <TextView
         android:id="@+id/dog1text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog1name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -25,12 +25,12 @@
 
     <TextView
         android:id="@+id/dog5text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog5name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -41,12 +41,12 @@
 
     <TextView
         android:id="@+id/dog6text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog6name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -57,12 +57,12 @@
 
     <TextView
         android:id="@+id/dog4text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog4name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -73,12 +73,12 @@
 
     <TextView
         android:id="@+id/dog3text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog3name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -89,12 +89,12 @@
 
     <TextView
         android:id="@+id/dog2text"
-        android:layout_width="120dp"
+        android:layout_width="160dp"
         android:layout_height="20dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/white"
+        android:background="@color/gray"
         android:text="@string/dog2name"
         android:textAlignment="center"
         android:translationZ="1dp"
@@ -108,36 +108,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="150dp" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="192dp" />
+        app:layout_constraintGuide_begin="175dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="300dp" />
+        app:layout_constraintGuide_begin="350dp" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="450dp" />
+        app:layout_constraintGuide_begin="525dp" />
 
     <ImageButton
         android:id="@+id/dog1button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog1_contentDesc"
         android:onClick="goToBeyonce"
@@ -150,11 +143,10 @@
 
     <ImageButton
         android:id="@+id/dog2button"
-        style="@android:style/Widget.Material.ImageButton"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog1_contentDesc"
@@ -168,11 +160,11 @@
 
     <ImageButton
         android:id="@+id/dog3button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog3_contentDesc"
         android:onClick="goToKim"
@@ -185,9 +177,9 @@
 
     <ImageButton
         android:id="@+id/dog4button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
@@ -202,11 +194,11 @@
 
     <ImageButton
         android:id="@+id/dog5button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/dog5_contentDesc"
         android:onClick="goToSelena"
@@ -219,9 +211,9 @@
 
     <ImageButton
         android:id="@+id/dog6button"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
@@ -234,21 +226,107 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3"
         app:srcCompat="@drawable/dog6image" />
 
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/bottom_navigation"
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/bottom_button_background"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorPrimaryDark"
-        app:itemIconTint="@color/design_default_color_primary"
-        app:itemTextColor="@color/white"
+        android:layout_height="65dp"
+        android:contentDescription="@string/blue_border_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav">
+        app:srcCompat="@color/colorPrimaryDark" />
 
-    </android.support.design.widget.BottomNavigationView>
+    <ImageButton
+        android:id="@+id/dog_directory_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="120dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/dogs"
+        android:onClick="goToDogDirectory"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/bottom_button_background"
+        app:srcCompat="@drawable/ic_dogs" />
 
+    <ImageButton
+        android:id="@+id/favorites_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/favorites"
+        android:onClick="goToFavorites"
+        app:layout_constraintStart_toEndOf="@+id/dog_directory_button"
+        app:layout_constraintTop_toTopOf="@+id/bottom_button_background"
+        app:srcCompat="@drawable/ic_favorites" />
 
+    <ImageButton
+        android:id="@+id/my_reservations_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/reservations"
+        android:onClick="goToMyReservations"
+        app:layout_constraintStart_toEndOf="@+id/favorites_button"
+        app:layout_constraintTop_toTopOf="@+id/bottom_button_background"
+        app:srcCompat="@drawable/ic_reservation" />
+
+    <ImageButton
+        android:id="@+id/our_mission_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:contentDescription="@string/about_us"
+        android:onClick="goToOurMission"
+        app:layout_constraintStart_toEndOf="@+id/my_reservations_button"
+        app:layout_constraintTop_toTopOf="@+id/my_reservations_button"
+        app:srcCompat="@drawable/ic_about_us" />
+
+    <TextView
+        android:id="@+id/dog_directory_text"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="120dp"
+        android:text="@string/dogs"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/dog_directory_button" />
+
+    <TextView
+        android:id="@+id/favorites_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:text="@string/favorites"
+        app:layout_constraintStart_toEndOf="@+id/dog_directory_text"
+        app:layout_constraintTop_toBottomOf="@+id/favorites_button" />
+
+    <TextView
+        android:id="@+id/my_reservations_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="@string/reservations"
+        app:layout_constraintStart_toEndOf="@+id/favorites_text"
+        app:layout_constraintTop_toBottomOf="@+id/my_reservations_button" />
+
+    <TextView
+        android:id="@+id/our_mission_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/about_us"
+        app:layout_constraintStart_toEndOf="@+id/my_reservations_text"
+        app:layout_constraintTop_toBottomOf="@+id/our_mission_button" />
 
 
 </android.support.constraint.ConstraintLayout>

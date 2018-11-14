@@ -13,6 +13,30 @@ public class DonateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_donate);
     }
 
+
+    public void goToDogDirectory(View view){
+        Intent intent = new Intent(this, DogDirectory.class);
+        startActivity(intent);
+    }
+
+    public void goToFavorites(View view){
+        Intent intent = new Intent(this, Favorites.class);
+        startActivity(intent);
+    }
+
+    public void goToOurMission(View view){
+        Intent intent = new Intent(this, OurMission.class);
+        startActivity(intent);
+    }
+
+    public void goToMyReservations(View view){
+        Intent intent = new Intent(this, MyReservations.class);
+        startActivity(intent);
+    }
+
+
+
+
     /** Called when the user clicks the "Donate" button */
     public void goToDonateSuccessScreen(View view) {
         Intent intent = new Intent(this, DonateSuccessNotice.class);
