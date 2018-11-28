@@ -12,8 +12,8 @@
 
     <ImageView
         android:id="@+id/Jay_Z_Pic"
-        android:layout_width="418dp"
-        android:layout_height="406dp"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
         android:contentDescription="@string/dog2_contentDesc"
         app:srcCompat="@drawable/dog2image" />
 

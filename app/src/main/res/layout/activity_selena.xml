@@ -13,7 +13,7 @@
     <ImageView
         android:id="@+id/Selena_Pic"
         android:layout_width="match_parent"
-        android:layout_height="411dp"
+        android:layout_height="410dp"
         android:contentDescription="@string/dog5_contentDesc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

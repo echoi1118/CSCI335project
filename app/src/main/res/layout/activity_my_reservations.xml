@@ -13,8 +13,8 @@
         android:layout_height="wrap_content"
         android:text="@string/del_reserve"
         app:layout_constraintBottom_toBottomOf="@+id/dogBorder"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/dogBorder"
+        app:layout_constraintStart_toStartOf="@+id/dogBorder" />
 
     <ImageView
         android:id="@+id/dogBorder"
@@ -34,9 +34,8 @@
         android:layout_height="124dp"
         android:contentDescription="@string/dog4_contentDesc"
         android:scaleType="fitStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dogBorder"
+        app:layout_constraintStart_toStartOf="@+id/dogBorder"
         app:layout_constraintTop_toTopOf="@+id/dogBorder"
         app:srcCompat="@drawable/dog4image" />
 
@@ -55,12 +54,12 @@
         android:id="@+id/selena_button2"
         android:layout_width="350dp"
         android:layout_height="120dp"
+        android:layout_marginTop="4dp"
         android:contentDescription="@string/dog5_contentDesc"
         android:scaleType="fitStart"
         android:translationZ="1dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dogBorder1"
+        app:layout_constraintStart_toStartOf="@+id/dogBorder1"
         app:layout_constraintTop_toTopOf="@+id/dogBorder1"
         app:srcCompat="@drawable/dog5image" />
 
@@ -94,8 +93,8 @@
         android:layout_height="wrap_content"
         android:text="@string/del_reserve"
         app:layout_constraintBottom_toBottomOf="@+id/dogBorder1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/dogBorder1"
+        app:layout_constraintStart_toStartOf="@+id/dogBorder1" />
 
 
     <android.support.constraint.Guideline

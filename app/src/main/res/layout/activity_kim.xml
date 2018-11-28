@@ -12,7 +12,7 @@
 
     <ImageView
         android:id="@+id/Kim_Pic"
-        android:layout_width="417dp"
+        android:layout_width="match_parent"
         android:layout_height="410dp"
         android:contentDescription="@string/dog3_contentDesc"
         app:layout_constraintEnd_toEndOf="parent"

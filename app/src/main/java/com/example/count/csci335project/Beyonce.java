@@ -7,6 +7,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Beyonce extends AppCompatActivity {
@@ -40,6 +41,15 @@ public class Beyonce extends AppCompatActivity {
     public void goToMyReservations(View view){
         Intent intent = new Intent(this, MyReservations.class);
         startActivity(intent);
+    }
+
+    public void addToFavorites(){
+        ImageButton button = (ImageButton) findViewById(R.id.FavoriteButton);
+        button.setImageResource(R.drawable.ic_favorites);
+
+        TextView selectedDog = findViewById(R.id.dog_name);
+        String message = selectedDog.getText().toString();
+
     }
 
 

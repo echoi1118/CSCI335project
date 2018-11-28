@@ -12,8 +12,8 @@
 
     <ImageView
         android:id="@+id/JB_Pic"
-        android:layout_width="413dp"
-        android:layout_height="407dp"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
         android:contentDescription="@string/dog6_contentDesc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +60,7 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/DogDescription"
-        app:srcCompat="@drawable/ic_favorites" />
+        app:srcCompat="@drawable/ic_empty_favorites" />
 
     <ImageButton
         android:id="@+id/ReserveButton"
