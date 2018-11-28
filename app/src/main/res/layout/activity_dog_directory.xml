@@ -263,6 +263,7 @@
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/favorites"
         android:onClick="goToFavorites"
+        android:tint="@color/gray"
         app:layout_constraintStart_toEndOf="@+id/dog_directory_button"
         app:layout_constraintTop_toTopOf="@+id/bottom_button_background"
         app:srcCompat="@drawable/ic_favorites" />
@@ -275,6 +276,7 @@
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/reservations"
         android:onClick="goToMyReservations"
+        android:tint="@color/gray"
         app:layout_constraintStart_toEndOf="@+id/favorites_button"
         app:layout_constraintTop_toTopOf="@+id/bottom_button_background"
         app:srcCompat="@drawable/ic_reservation" />
@@ -287,6 +289,7 @@
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/about_us"
         android:onClick="goToOurMission"
+        android:tint="@color/gray"
         app:layout_constraintStart_toEndOf="@+id/my_reservations_button"
         app:layout_constraintTop_toTopOf="@+id/my_reservations_button"
         app:srcCompat="@drawable/ic_about_us" />
