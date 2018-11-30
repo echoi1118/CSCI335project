@@ -12,8 +12,8 @@
 
     <ImageView
         android:id="@+id/Kanye_Pic"
-        android:layout_width="415dp"
-        android:layout_height="411dp"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
         android:contentDescription="@string/dog4_contentDesc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +31,7 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/rounded_square_bg2"
-        app:srcCompat="@drawable/ic_favorites" />
+        app:srcCompat="@drawable/ic_empty_favorites" />
 
     <TextView
         android:id="@+id/DogDescription"
@@ -108,8 +108,8 @@
 
     <ImageButton
         android:id="@+id/dog_directory_button"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_marginEnd="120dp"
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/dogs"
@@ -120,8 +120,8 @@
 
     <ImageButton
         android:id="@+id/favorites_button"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_marginStart="50dp"
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/favorites"
@@ -133,8 +133,8 @@
 
     <ImageButton
         android:id="@+id/my_reservations_button"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_marginStart="50dp"
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/reservations"
@@ -146,8 +146,8 @@
 
     <ImageButton
         android:id="@+id/our_mission_button"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         android:layout_marginStart="50dp"
         android:background="@color/colorPrimaryDark"
         android:contentDescription="@string/about_us"
@@ -159,11 +159,11 @@
 
     <TextView
         android:id="@+id/dog_directory_text"
-        android:layout_width="40dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="128dp"
         android:text="@string/dogs"
-        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Caption"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/dog_directory_button" />
 
@@ -171,8 +171,9 @@
         android:id="@+id/favorites_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
+        android:layout_marginStart="56dp"
         android:text="@string/favorites"
+        android:textAppearance="@android:style/TextAppearance.Material.Caption"
         app:layout_constraintStart_toEndOf="@+id/dog_directory_text"
         app:layout_constraintTop_toBottomOf="@+id/favorites_button" />
 
@@ -180,8 +181,9 @@
         android:id="@+id/my_reservations_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
+        android:layout_marginStart="36dp"
         android:text="@string/reservations"
+        android:textAppearance="@android:style/TextAppearance.Material.Caption"
         app:layout_constraintStart_toEndOf="@+id/favorites_text"
         app:layout_constraintTop_toBottomOf="@+id/my_reservations_button" />
 
@@ -189,8 +191,9 @@
         android:id="@+id/our_mission_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="35dp"
         android:text="@string/about_us"
+        android:textAppearance="@android:style/TextAppearance.Material.Caption"
         app:layout_constraintStart_toEndOf="@+id/my_reservations_text"
         app:layout_constraintTop_toBottomOf="@+id/our_mission_button" />
 
