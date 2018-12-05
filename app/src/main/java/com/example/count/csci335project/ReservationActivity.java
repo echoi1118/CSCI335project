@@ -2,23 +2,16 @@ package com.example.count.csci335project;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
-import android.icu.util.Calendar;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDialogFragment;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
+import java.text.DateFormat;
 
-public class ReservationActivity extends AppCompatActivity {
-
-    public String date;
-
-    private TextView mDisplayDate;
-    private DatePickerDialog.OnDateSetListener mDateSetListener;
-    public static final String DOG_NAME_RESERVED = "com.example.myfirstapp.DOG_NAME_MESSAGE";
-    public static final String DATE_RESERVED = "com.example.myfirstapp.DATE_MESSAGE";
+public class ReservationActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
 
     @Override
@@ -26,68 +19,32 @@ public class ReservationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservation);
 
-        // Get the Intent that started this activity and extract the string
-        Intent intent = getIntent();
-        String message = intent.getStringExtra(Beyonce.EXTRA_MESSAGE);
-
-        // Capture the layout's TextView and set the string as its text
-        TextView dogDesc = findViewById(R.id.dogs);
-        dogDesc.setText(message);
-
-        mDisplayDate = (TextView) findViewById(R.id.DateSelection);
-
-        mDisplayDate.setOnClickListener(new View.OnClickListener() {
+        Button button = (Button) findViewById(R.id.date_selection_btn);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                java.util.Calendar calendar = java.util.Calendar.getInstance();
-                int year = calendar.get(Calendar.YEAR);
-                int month = calendar.get(Calendar.MONTH);
-                int day = calendar.get(Calendar.DAY_OF_MONTH);
-
-                DatePickerDialog dialog = new DatePickerDialog(
-                        ReservationActivity.this,
-                        R.style.AppTheme,
-                        mDateSetListener,
-                        year,
-                        month,
-                        day
-                );
-
-                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                dialog.show();
-
+            public void onClick(View v) {
+                AppCompatDialogFragment datePicker = new DatePickerFragment();
+                datePicker.show(getSupportFragmentManager(), "date picker");
             }
         });
 
-        mDateSetListener = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                month = month + 1;
+    }
 
-                date = month + "/" + day +"/" + year;
-                mDisplayDate.setText(date);
-            }
-        };
+    @Override
+    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+        java.util.Calendar c = java.util.Calendar.getInstance();
+        c.set(java.util.Calendar.YEAR, year);
+        c.set(java.util.Calendar.MONTH, month);
+        c.set(java.util.Calendar.DAY_OF_MONTH, dayOfMonth);
+
+        String currentDateString = DateFormat.getDateInstance(DateFormat.FULL).format(c.getTime());
+
+        TextView DateSelection = (TextView) findViewById(R.id.DateSelection);
+        DateSelection.setText(currentDateString);
+
 
     }
 
-
-    public void onReserve(View view){
-
-
-
-        Intent intent = new Intent(this, MyReservations.class);
-
-        TextView textView = findViewById(R.id.dog_name);
-        String dogName = textView.getText().toString();
-        intent.putExtra(DOG_NAME_RESERVED, dogName);
-
-        intent.putExtra(DATE_RESERVED, date);
-
-        startActivity(intent);
-
-
-    }
 
     public void goToDogDirectory(View view){
         Intent intent = new Intent(this, DogDirectory.class);
@@ -108,9 +65,4 @@ public class ReservationActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MyReservations.class);
         startActivity(intent);
     }
-
-
-
-
-
 }
