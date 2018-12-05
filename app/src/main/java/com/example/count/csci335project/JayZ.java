@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
 public class JayZ extends AppCompatActivity {
 
@@ -16,6 +17,17 @@ public class JayZ extends AppCompatActivity {
     /** Reserve Jay-Z */
     public void goToReserveJayZ(View view) {
         Intent intent = new Intent(this, ReservationActivity.class);
+        Bundle extras = new Bundle();
+
+        TextView dog_name = findViewById(R.id.dog_name);
+        TextView dog_desc = findViewById(R.id.dog_desc);
+        //ImageView dog_img = findViewById(R.id.Jay_Z_Pic);
+
+        extras.putString("key_name", dog_name.getText().toString());
+        extras.putString("key_desc", dog_desc.getText().toString());
+        //ImageView img_of_dog = dog_img;
+
+        intent.putExtras(extras);
         startActivity(intent);
     }
 

@@ -19,6 +19,18 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservation);
 
+        // Get the Intent that started this activity and extract the string
+        Bundle extras = getIntent().getExtras();
+        String name = extras.getString("key_name");
+        String desc = extras.getString("key_desc");
+
+        // Capture the layout's TextView and set the string as its text
+        TextView dog_name = findViewById(R.id.dog_name);
+        TextView dog_desc = findViewById(R.id.dog_desc);
+        dog_name.setText(name);
+        dog_desc.setText(desc);
+
+        /** For the calendar/date picker function */
         Button button = (Button) findViewById(R.id.date_selection_btn);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

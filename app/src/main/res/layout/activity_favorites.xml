@@ -36,7 +36,7 @@
         app:srcCompat="@drawable/dog5image" />
 
     <TextView
-        android:id="@+id/DogDescription"
+        android:id="@+id/dog_desc"
         android:layout_width="210dp"
         android:layout_height="100dp"
         android:layout_marginEnd="16dp"

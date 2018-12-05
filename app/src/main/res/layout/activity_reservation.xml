@@ -20,13 +20,13 @@
         android:contentDescription="@string/dog2_contentDesc"
         android:translationZ="2dp"
         app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg"
-        app:layout_constraintEnd_toStartOf="@+id/DogDescription"
+        app:layout_constraintEnd_toStartOf="@+id/dog_desc"
         app:layout_constraintStart_toStartOf="@+id/rounded_square_bg"
         app:layout_constraintTop_toTopOf="@+id/rounded_square_bg"
         app:srcCompat="@drawable/dog2image" />
 
     <TextView
-        android:id="@+id/DogDescription"
+        android:id="@+id/dog_desc"
         android:layout_width="190dp"
         android:layout_height="150dp"
         android:layout_marginEnd="8dp"

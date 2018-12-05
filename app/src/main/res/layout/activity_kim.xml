@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/ic_empty_favorites" />
 
     <TextView
-        android:id="@+id/DogDescription"
+        android:id="@+id/dog_desc"
         android:layout_width="273dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
@@ -68,12 +68,13 @@
         android:layout_marginStart="28dp"
         android:background="@color/white"
         android:contentDescription="@string/reservations"
+        android:onClick="goToReserveKim"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/FavoriteButton"
         app:srcCompat="@drawable/ic_reservation" />
 
     <TextView
-        android:id="@+id/kim_name"
+        android:id="@+id/dog_name"
         android:layout_width="58dp"
         android:layout_height="44dp"
         android:layout_marginStart="8dp"

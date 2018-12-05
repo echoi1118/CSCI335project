@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/dog6image" />
 
     <TextView
-        android:id="@+id/DogDescription"
+        android:id="@+id/dog_desc"
         android:layout_width="308dp"
         android:layout_height="91dp"
         android:layout_marginEnd="8dp"
@@ -35,7 +35,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/JB_name" />
+        app:layout_constraintTop_toBottomOf="@+id/dog_name" />
 
     <ImageView
         android:id="@+id/rounded_square_bg2"
@@ -59,7 +59,7 @@
         android:contentDescription="@string/favorites"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/DogDescription"
+        app:layout_constraintTop_toBottomOf="@+id/dog_desc"
         app:srcCompat="@drawable/ic_empty_favorites" />
 
     <ImageButton
@@ -69,12 +69,13 @@
         android:layout_marginStart="28dp"
         android:background="@color/white"
         android:contentDescription="@string/reservations"
+        android:onClick="goToReserveJB"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/FavoriteButton"
         app:srcCompat="@drawable/ic_reservation" />
 
     <TextView
-        android:id="@+id/JB_name"
+        android:id="@+id/dog_name"
         android:layout_width="46dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"

@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/ic_empty_favorites" />
 
     <TextView
-        android:id="@+id/DogDescription"
+        android:id="@+id/dog_desc"
         android:layout_width="341dp"
         android:layout_height="51dp"
         android:layout_marginStart="8dp"
@@ -58,7 +58,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/Jay_Z_Pic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/JayZ_name"
+        app:layout_constraintTop_toTopOf="@+id/dog_name"
         app:srcCompat="@drawable/rounded_square_img" />
 
     <ImageButton
@@ -75,7 +75,7 @@
         app:srcCompat="@drawable/ic_reservation" />
 
     <TextView
-        android:id="@+id/JayZ_name"
+        android:id="@+id/dog_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -84,7 +84,7 @@
         android:text="@string/dog2name"
         android:textColor="@color/white"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/DogDescription"
+        app:layout_constraintBottom_toTopOf="@+id/dog_desc"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

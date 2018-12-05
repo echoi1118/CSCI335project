@@ -17,10 +17,26 @@ public class JB extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jb);
-
-
     }
 
+    /** Reserve JB */
+    public void goToReserveJB(View view) {
+        Intent intent = new Intent(this, ReservationActivity.class);
+        Bundle extras = new Bundle();
+
+        TextView dog_name = findViewById(R.id.dog_name);
+        TextView dog_desc = findViewById(R.id.dog_desc);
+        //ImageView dog_img = findViewById(R.id.Jay_Z_Pic);
+
+        extras.putString("key_name", dog_name.getText().toString());
+        extras.putString("key_desc", dog_desc.getText().toString());
+        //ImageView img_of_dog = dog_img;
+
+        intent.putExtras(extras);
+        startActivity(intent);
+    }
+
+    /** Bottom navigation links */
     public void goToDogDirectory(View view){
         Intent intent = new Intent(this, DogDirectory.class);
         startActivity(intent);
