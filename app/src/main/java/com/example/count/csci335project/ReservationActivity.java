@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatDialogFragment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TextView;
 import java.text.DateFormat;
 
@@ -23,12 +24,15 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
         Bundle extras = getIntent().getExtras();
         String name = extras.getString("key_name");
         String desc = extras.getString("key_desc");
+        int pic = extras.getInt("key_img");
 
         // Capture the layout's TextView and set the string as its text
         TextView dog_name = findViewById(R.id.dog_name);
         TextView dog_desc = findViewById(R.id.dog_desc);
+        ImageView dog_img = findViewById(R.id.dog_pic);
         dog_name.setText(name);
         dog_desc.setText(desc);
+        dog_img.setImageResource(pic);
 
         /** For the calendar/date picker function */
         Button button = (Button) findViewById(R.id.date_selection_btn);
@@ -39,7 +43,6 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
                 datePicker.show(getSupportFragmentManager(), "date picker");
             }
         });
-
     }
 
     @Override
@@ -53,8 +56,6 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
 
         TextView DateSelection = (TextView) findViewById(R.id.DateSelection);
         DateSelection.setText(currentDateString);
-
-
     }
 
 

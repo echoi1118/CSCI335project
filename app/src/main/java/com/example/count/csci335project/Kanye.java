@@ -26,11 +26,10 @@ public class Kanye extends AppCompatActivity {
 
         TextView dog_name = findViewById(R.id.dog_name);
         TextView dog_desc = findViewById(R.id.dog_desc);
-        //ImageView dog_img = findViewById(R.id.Jay_Z_Pic);
 
         extras.putString("key_name", dog_name.getText().toString());
         extras.putString("key_desc", dog_desc.getText().toString());
-        //ImageView img_of_dog = dog_img;
+        extras.putInt("key_img", R.drawable.dog4image);
 
         intent.putExtras(extras);
         startActivity(intent);

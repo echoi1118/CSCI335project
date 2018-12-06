@@ -11,7 +11,7 @@
 
 
     <ImageView
-        android:id="@+id/Jay_Z_Pic"
+        android:id="@+id/dog_pic"
         android:layout_width="match_parent"
         android:layout_height="410dp"
         android:contentDescription="@string/dog2_contentDesc"
@@ -44,7 +44,7 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         android:translationZ="1dp"
-        app:layout_constraintBottom_toBottomOf="@+id/Jay_Z_Pic"
+        app:layout_constraintBottom_toBottomOf="@+id/dog_pic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -55,7 +55,7 @@
         android:alpha=".6"
         android:contentDescription="@string/rounded_square_bg"
         android:tint="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/Jay_Z_Pic"
+        app:layout_constraintBottom_toBottomOf="@+id/dog_pic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/dog_name"

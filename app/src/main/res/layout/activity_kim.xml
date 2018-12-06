@@ -11,7 +11,7 @@
 
 
     <ImageView
-        android:id="@+id/Kim_Pic"
+        android:id="@+id/dog_pic"
         android:layout_width="match_parent"
         android:layout_height="410dp"
         android:contentDescription="@string/dog3_contentDesc"
@@ -30,7 +30,7 @@
         android:contentDescription="@string/favorites"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/Kim_Pic"
+        app:layout_constraintTop_toBottomOf="@+id/dog_pic"
         app:srcCompat="@drawable/ic_empty_favorites" />
 
     <TextView
@@ -56,7 +56,7 @@
         android:alpha=".6"
         android:contentDescription="@string/rounded_square_bg"
         android:tint="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/Kim_Pic"
+        app:layout_constraintBottom_toBottomOf="@+id/dog_pic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/rounded_square_img" />
