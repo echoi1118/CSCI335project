@@ -7,11 +7,13 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class Beyonce extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "Test string";//
+    private int beyonce_name;
 
 
     @Override
@@ -42,7 +44,14 @@ public class Beyonce extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void addToFavorites(View view){
+        TextView dogNameBox = findViewById(R.id.beyonce_name);
+        String dogName = (String) dogNameBox.getText();
+        Info.mFaveDogs.add(dogName);
+        Info.mFaveImages.add(R.id.Beyonce_Pic);
+        ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+        FaveButton.setImageResource(R.drawable.ic_favorites);
+    }
 
     /** Beyonce - Reservation button used to pass data*/
     public void passInfoToReservationActivity(View view) {

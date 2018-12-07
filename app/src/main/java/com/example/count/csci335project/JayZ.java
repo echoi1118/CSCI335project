@@ -7,6 +7,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class JayZ extends AppCompatActivity {
@@ -41,7 +42,14 @@ public class JayZ extends AppCompatActivity {
         startActivity(intent);
     }
 
-
+    public void addToFavorites(View view){
+        TextView dogNameBox = findViewById(R.id.JayZ_name);
+        String dogName = (String) dogNameBox.getText();
+        Info.mFaveDogs.add(dogName);
+        Info.mFaveImages.add(R.id.Jay_Z_Pic);
+        ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+        FaveButton.setImageResource(R.drawable.ic_favorites);
+    }
 
 }
 

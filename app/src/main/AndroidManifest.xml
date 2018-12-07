@@ -25,8 +25,9 @@
             android:name=".CreateAnAccount"
             android:label="@string/create_acct_title"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".CreateAcctSuccessNotice"
-            android:parentActivityName=".CreateAnAccount"/>
+        <activity
+            android:name=".CreateAcctSuccessNotice"
+            android:parentActivityName=".CreateAnAccount" />
         <activity
             android:name=".DogDirectory"
             android:label="@string/title_activity_dog_directory" />
@@ -64,8 +65,8 @@
             android:parentActivityName=".OurMission" />
         <activity
             android:name=".DonateSuccessNotice"
-            android:parentActivityName=".DonateActivity"></activity>
-        <activity android:name=".MyReservations"/>
+            android:parentActivityName=".DonateActivity" />
+        <activity android:name=".MyReservations" />
     </application>
 
 </manifest>

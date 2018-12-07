@@ -7,6 +7,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class JB extends AppCompatActivity {
@@ -39,6 +40,15 @@ public class JB extends AppCompatActivity {
     public void goToMyReservations(View view){
         Intent intent = new Intent(this, MyReservations.class);
         startActivity(intent);
+    }
+
+    public void addToFavorites(View view){
+        TextView dogNameBox = findViewById(R.id.JB_name);
+        String dogName = (String) dogNameBox.getText();
+        Info.mFaveDogs.add(dogName);
+        Info.mFaveImages.add(R.id.JB_Pic);
+        ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+        FaveButton.setImageResource(R.drawable.ic_favorites);
     }
 
 
