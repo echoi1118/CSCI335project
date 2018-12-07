@@ -14,7 +14,6 @@ import java.text.DateFormat;
 
 public class ReservationActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,13 +29,14 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
         TextView dog_name = findViewById(R.id.dog_name);
         TextView dog_desc = findViewById(R.id.dog_desc);
         ImageView dog_img = findViewById(R.id.dog_pic);
+
         dog_name.setText(name);
         dog_desc.setText(desc);
         dog_img.setImageResource(pic);
 
         /** For the calendar/date picker function */
-        Button button = (Button) findViewById(R.id.date_selection_btn);
-        button.setOnClickListener(new View.OnClickListener() {
+        TextView t = findViewById(R.id.DateSelection);
+        t.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AppCompatDialogFragment datePicker = new DatePickerFragment();
@@ -45,6 +45,7 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
         });
     }
 
+    /** For the calendar/date picker function */
     @Override
     public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
         java.util.Calendar c = java.util.Calendar.getInstance();
@@ -54,11 +55,28 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
 
         String currentDateString = DateFormat.getDateInstance(DateFormat.FULL).format(c.getTime());
 
-        TextView DateSelection = (TextView) findViewById(R.id.DateSelection);
+        TextView DateSelection = findViewById(R.id.DateSelection);
         DateSelection.setText(currentDateString);
     }
 
+    /** Reserve button functionality */
+    public void reserveThisDog(View view) {
+        Intent intent = new Intent(this, MyReservations.class);
+        Bundle extras = new Bundle();
 
+        TextView dog_name = findViewById(R.id.dog_name);
+        TextView dog_desc = findViewById(R.id.dog_desc);
+
+        extras.putString("key_name", dog_name.getText().toString());
+        extras.putString("key_desc", dog_desc.getText().toString());
+        extras.putInt("key_img", R.id.dog_pic);
+
+        intent.putExtras(extras);
+        startActivity(intent);
+
+    }
+
+    /** Bottom navigation links */
     public void goToDogDirectory(View view){
         Intent intent = new Intent(this, DogDirectory.class);
         startActivity(intent);

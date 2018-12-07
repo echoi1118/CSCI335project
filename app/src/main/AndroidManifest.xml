@@ -65,7 +65,8 @@
         <activity
             android:name=".DonateSuccessNotice"
             android:parentActivityName=".DonateActivity"></activity>
-        <activity android:name=".MyReservations"/>
+        <activity android:name=".MyReservations"
+            android:label="My Reservations"/>
     </application>
 
 </manifest>

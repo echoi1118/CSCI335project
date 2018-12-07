@@ -67,9 +67,8 @@
 
     <!-- Strings related to Reservation Screens -->
     <string name="dogDesc">placeholder text</string>
-    <string name="select_date_btn">Choose &amp; Reserve</string>
-    <string name="reserve">Reserve</string>
-    <string name="select_date">Pickup Date</string>
+    <string name="reserve_btn">Reserve</string>
+    <string name="select_date">Click me to select pickup date</string>
     <string name="del_reserve">Delete Reservation</string>
 
     <!-- Strings related to Dog Specs screens -->
