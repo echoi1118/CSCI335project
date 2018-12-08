@@ -34,7 +34,7 @@
     <string name="title_activity_dog_directory">Dog Directory</string>
     <string name="dog1_contentDesc">Cute, medium-build puppy with light-brown, downy fur and an adorable wet nose.</string>
     <string name="dog2_contentDesc">I\'m a sleepy little chihuahua with an attitude. Won\'t you take me home?</string>
-    <string name="dog3_contentDesc">What is that? Is that a husky?</string>
+    <string name="dog3_contentDesc">I\'m a little husky, but not a lot. Come take me home!</string>
     <string name="dog4_contentDesc">I don\'t know what I am, but if you take me home, I love you long time. Arf! Arf!</string>
     <string name="dog5_contentDesc">Am I a hot dog? Why, yes I am. And I\'m the hottest dog around.</string>
     <string name="dog6_contentDesc">Do I look a little hairy to you? You should take me home and give me a haircut.</string>
@@ -47,10 +47,8 @@
 
     <!-- Strings related to Our Mission Screen -->
     <string name="our_mission_lbl">Our Mission</string>
-    <string name="mission_stmt_beg"> We here at Dogs \'R Us&#8230;\n
-        Lorem ipsum dolor sit amet,\n
-        consectetur adipiscing elit. Nullam\n
-        eu ornare odio Maeceras odio est.
+    <string name="mission_stmt_beg">Our Mission at Dogs \'R Us is to find
+        loving homes for stray, abandoned and surrendered animals and to assist prospective owners in finding the perfect companion.
     </string>
 
 

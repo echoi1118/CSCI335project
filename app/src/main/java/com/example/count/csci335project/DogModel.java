@@ -26,14 +26,27 @@ public class DogModel {
     public static List<DogModel> getObjectList() {
         List<DogModel> dataList = new ArrayList<>();
         int[] images = getImages();
+        String[] names = getNames();
 
         for (int i = 0; i < images.length; i++) {
             DogModel dog = new DogModel();
             dog.setImageID(images[i]);
-            dog.setName("Dog" + i);
+            dog.setName(names[i]);
             dataList.add(dog);
         }
         return dataList;
+    }
+
+    private static String[] getNames() {
+        String[] names = {
+                "Beyonce",
+                "Jay-Z",
+                "Kim",
+                "Kanye",
+                "Selena",
+                "JB"
+        };
+        return names;
     }
 
     private static int[] getImages() {
