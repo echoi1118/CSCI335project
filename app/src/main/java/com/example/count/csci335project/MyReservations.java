@@ -8,8 +8,6 @@ import android.support.v7.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
 
-import java.util.ArrayList;
-
 public class MyReservations extends AppCompatActivity {
 
 

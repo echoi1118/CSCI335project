@@ -11,7 +11,7 @@
 
 
     <ImageView
-        android:id="@+id/dog_img"
+        android:id="@+id/res_dog_img"
         android:layout_width="match_parent"
         android:layout_height="410dp"
         android:contentDescription="@string/dog6_contentDesc"
@@ -35,7 +35,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/rounded_square_bg2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dog_name" />
+        app:layout_constraintTop_toBottomOf="@+id/res_dog_name" />
 
     <ImageView
         android:id="@+id/rounded_square_bg2"
@@ -44,7 +44,7 @@
         android:alpha=".6"
         android:contentDescription="@string/rounded_square_bg"
         android:tint="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/dog_img"
+        app:layout_constraintBottom_toBottomOf="@+id/res_dog_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/rounded_square_img" />
@@ -57,6 +57,7 @@
         android:layout_marginEnd="28dp"
         android:background="@color/white"
         android:contentDescription="@string/favorites"
+        android:onClick="Favorites"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toBottomOf="@+id/dog_desc"
@@ -75,7 +76,7 @@
         app:srcCompat="@drawable/ic_reservation" />
 
     <TextView
-        android:id="@+id/dog_name"
+        android:id="@+id/res_dog_name"
         android:layout_width="46dp"
         android:layout_height="43dp"
         android:layout_marginStart="8dp"

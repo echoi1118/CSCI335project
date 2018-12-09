@@ -22,7 +22,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/example_item" />
+        tools:listitem="@layout/list_item" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline2"

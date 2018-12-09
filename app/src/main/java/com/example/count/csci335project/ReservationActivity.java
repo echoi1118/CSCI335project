@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.text.DateFormat;
 
+import static com.example.count.csci335project.DogModel.reservationBool;
+import static com.example.count.csci335project.DogModel.reservationDate;
+
 public class ReservationActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
     @Override
@@ -25,9 +28,9 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
         int pic = extras.getInt("key_img");
 
         // Capture the layout's TextView and set the string as its text
-        TextView dog_name = findViewById(R.id.dog_name);
+        TextView dog_name = findViewById(R.id.res_dog_name);
         TextView dog_desc = findViewById(R.id.dog_desc);
-        ImageView dog_img = findViewById(R.id.dog_img);
+        ImageView dog_img = findViewById(R.id.res_dog_img);
 
         dog_name.setText(name);
         dog_desc.setText(desc);
@@ -38,6 +41,8 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
         t.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                TextView error = findViewById(R.id.error_date);
+                error.setVisibility(View.INVISIBLE);
                 AppCompatDialogFragment datePicker = new DatePickerFragment();
                 datePicker.show(getSupportFragmentManager(), "date picker");
             }
@@ -60,19 +65,50 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
 
     /** Reserve button functionality */
     public void reserveThisDog(View view) {
-        Intent intent = new Intent(this, MyReservations.class);
-        Bundle extras = new Bundle();
 
-        TextView dog_name = findViewById(R.id.dog_name);
-        TextView dog_desc = findViewById(R.id.dog_desc);
+        TextView date = findViewById(R.id.DateSelection);
+        if (date.getText().equals("Click me to select pickup date"))
+        {
+            TextView error = findViewById(R.id.error_date);
+            error.setVisibility(View.VISIBLE);
+        }
+        else{
 
-        extras.putString("key_name", dog_name.getText().toString());
-        extras.putString("key_desc", dog_desc.getText().toString());
-        extras.putInt("key_img", R.id.dog_img);
+            TextView dog_name = findViewById(R.id.res_dog_name);
 
-        intent.putExtras(extras);
-        startActivity(intent);
+            if (dog_name.equals("Beyonce")) {
+                reservationBool[0] = true;
+                reservationDate[0] = date.getText();
+            } else if (dog_name.equals("Jay-Z")) {
+                reservationBool[1] = true;
+                reservationDate[1] = date.getText();
+            } else if (dog_name.equals("Kim")) {
+                reservationBool[2] = true;
+                reservationDate[2] = date.getText();
+            } else if (dog_name.equals("Kanye")) {
+                reservationBool[3] = true;
+                reservationDate[3] = date.getText();
+            } else if (dog_name.equals("Selena")) {
+                reservationBool[4] = true;
+                reservationDate[4] = date.getText();
+            } else if (dog_name.equals("JB")) {
+                reservationBool[5] = true;
+                reservationDate[5] = date.getText();
+            }
 
+            Intent intent = new Intent(this, MyReservations.class);
+            Bundle extras = new Bundle();
+
+            TextView dog_desc = findViewById(R.id.dog_desc);
+
+            extras.putString("key_name", dog_name.getText().toString());
+            extras.putString("key_desc", dog_desc.getText().toString());
+            extras.putInt("key_img", R.id.res_dog_img);
+
+            intent.putExtras(extras);
+            startActivity(intent);
+
+        }
     }
 
     /** Bottom navigation links */
