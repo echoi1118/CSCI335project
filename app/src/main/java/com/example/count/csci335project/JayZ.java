@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import static com.example.count.csci335project.DogModel.reservationBool;
+
 public class JayZ extends AppCompatActivity {
 
     @Override
@@ -19,6 +21,8 @@ public class JayZ extends AppCompatActivity {
     public void goToReserveJayZ(View view) {
         Intent intent = new Intent(this, ReservationActivity.class);
         Bundle extras = new Bundle();
+
+        reservationBool[1] = true;
 
         TextView dog_name = findViewById(R.id.dog_name);
         TextView dog_desc = findViewById(R.id.dog_desc);

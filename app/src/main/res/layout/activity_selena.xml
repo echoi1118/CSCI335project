@@ -11,7 +11,7 @@
 
 
     <ImageView
-        android:id="@+id/dog_pic"
+        android:id="@+id/dog_img"
         android:layout_width="match_parent"
         android:layout_height="410dp"
         android:contentDescription="@string/dog5_contentDesc"
@@ -30,7 +30,7 @@
         android:contentDescription="@string/favorites"
         android:textAlignment="center"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/dog_pic"
+        app:layout_constraintTop_toBottomOf="@+id/dog_img"
         app:srcCompat="@drawable/ic_empty_favorites" />
 
     <TextView

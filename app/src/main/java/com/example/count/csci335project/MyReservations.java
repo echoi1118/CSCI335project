@@ -19,7 +19,7 @@ public class MyReservations extends AppCompatActivity {
         setContentView(R.layout.activity_my_reservations);
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-        ResAdapter adapter = new ResAdapter(this, DogModel.getObjectList());
+        ResAdapter adapter = new ResAdapter(this, DogModel.getResList());
         recyclerView.setAdapter(adapter);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);

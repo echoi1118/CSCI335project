@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import static com.example.count.csci335project.DogModel.reservationBool;
+
 public class Beyonce extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE = "Test string";//
@@ -21,6 +23,8 @@ public class Beyonce extends AppCompatActivity {
     public void goToReserveBeyonce(View view) {
         Intent intent = new Intent(this, ReservationActivity.class);
         Bundle extras = new Bundle();
+
+        reservationBool[0] = true;
 
         TextView dog_name = findViewById(R.id.dog_name);
         TextView dog_desc = findViewById(R.id.dog_desc);

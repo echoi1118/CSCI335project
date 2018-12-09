@@ -11,7 +11,7 @@
 
 
     <ImageView
-        android:id="@+id/dog_pic"
+        android:id="@+id/dog_img"
         android:layout_width="match_parent"
         android:layout_height="410dp"
         android:contentDescription="@string/dog1_contentDesc"
@@ -45,7 +45,7 @@
         android:alpha=".60"
         android:contentDescription="@string/rounded_square_bg"
         android:tint="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="@+id/dog_pic"
+        app:layout_constraintBottom_toBottomOf="@+id/dog_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"

@@ -13,6 +13,7 @@ import android.widget.TextView;
 import java.util.List;
 
 import static android.content.ContentValues.TAG;
+import static com.example.count.csci335project.DogModel.reservationBool;
 
 public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
     private List<DogModel> objectList;
@@ -76,7 +77,23 @@ public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
             }
         }
     }
+
     public void removeItem(int position) {
+
+        DogModel object = objectList.get(position);
+        if (object.getName() == "Beyonce")
+            reservationBool[0] = false;
+        else if (object.getName() == "Jay-Z")
+            reservationBool[1] = false;
+        else if (object.getName() == "Kim")
+            reservationBool[2] = false;
+        else if (object.getName() == "Kanye")
+            reservationBool[3] = false;
+        else if (object.getName() == "Selena")
+            reservationBool[4] = false;
+        else if (object.getName() == "JB")
+            reservationBool[5] = false;
+
         objectList.remove(position);
         notifyItemRemoved(position);
         notifyItemRangeChanged(position, objectList.size());

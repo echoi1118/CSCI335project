@@ -9,6 +9,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import static com.example.count.csci335project.DogModel.reservationBool;
+
 public class JB extends AppCompatActivity {
 
 
@@ -23,6 +25,8 @@ public class JB extends AppCompatActivity {
     public void goToReserveJB(View view) {
         Intent intent = new Intent(this, ReservationActivity.class);
         Bundle extras = new Bundle();
+
+        reservationBool[5] = true;
 
         TextView dog_name = findViewById(R.id.dog_name);
         TextView dog_desc = findViewById(R.id.dog_desc);

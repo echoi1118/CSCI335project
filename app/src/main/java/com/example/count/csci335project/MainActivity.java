@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToDogDirectory(View view){
+
+
+
+
         Intent intent = new Intent(this, DogDirectory.class);
         startActivity(intent);
     }
