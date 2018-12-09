@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
@@ -17,6 +20,16 @@ public class Favorites extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorites);
+
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.fav_recycler_view);
+        FavAdapter adapter = new FavAdapter(this, DogModel.getFavList());
+        recyclerView.setAdapter(adapter);
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        recyclerView.setLayoutManager(layoutManager);
+
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
 
 
     }

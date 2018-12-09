@@ -7,8 +7,10 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+import static com.example.count.csci335project.DogModel.favoriteBool;
 import static com.example.count.csci335project.DogModel.reservationBool;
 
 public class JB extends AppCompatActivity {
@@ -19,14 +21,39 @@ public class JB extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_jb);
+
+        if(!favoriteBool[5])
+        {
+            ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+            FaveButton.setImageResource(R.drawable.ic_empty_favorites);
+        }
+        else{
+            ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+            FaveButton.setImageResource(R.drawable.ic_favorites);
+        }
+
+    }
+
+
+    public void Favorites(View view){
+        if(favoriteBool[4])
+        {
+            favoriteBool[4] = false;
+            ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+            FaveButton.setImageResource(R.drawable.ic_empty_favorites);
+        }
+        else{
+            favoriteBool[4] = true;
+            ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+            FaveButton.setImageResource(R.drawable.ic_favorites);
+        }
+
     }
 
     /** Reserve JB */
     public void goToReserveJB(View view) {
         Intent intent = new Intent(this, ReservationActivity.class);
         Bundle extras = new Bundle();
-
-        reservationBool[5] = true;
 
         TextView dog_name = findViewById(R.id.dog_name);
         TextView dog_desc = findViewById(R.id.dog_desc);

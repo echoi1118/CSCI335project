@@ -11,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.text.DateFormat;
 
+import static com.example.count.csci335project.DogModel.reservationBool;
+import static com.example.count.csci335project.DogModel.reservationDate;
+
 public class ReservationActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
     @Override
@@ -38,6 +41,8 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
         t.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                TextView error = findViewById(R.id.error_date);
+                error.setVisibility(View.INVISIBLE);
                 AppCompatDialogFragment datePicker = new DatePickerFragment();
                 datePicker.show(getSupportFragmentManager(), "date picker");
             }
@@ -60,19 +65,27 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
 
     /** Reserve button functionality */
     public void reserveThisDog(View view) {
-        Intent intent = new Intent(this, MyReservations.class);
-        Bundle extras = new Bundle();
 
-        TextView dog_name = findViewById(R.id.dog_name);
-        TextView dog_desc = findViewById(R.id.dog_desc);
+        TextView date = findViewById(R.id.DateSelection);
+        if (date.getText().equals("Click me to select pickup date"))
+        {
+            TextView error = findViewById(R.id.error_date);
+            error.setVisibility(View.VISIBLE);
+        }
+        else{
 
-        extras.putString("key_name", dog_name.getText().toString());
-        extras.putString("key_desc", dog_desc.getText().toString());
-        extras.putInt("key_img", R.id.dog_img);
+            TextView dog_name = findViewById(R.id.dog_name);
+            String dogName = dog_name.getText().toString();
+            String rDate = date.getText().toString();
 
-        intent.putExtras(extras);
-        startActivity(intent);
+            setReserved(dogName, rDate);
 
+            Intent intent = new Intent(this, MyReservations.class);
+
+
+            view.getContext().startActivity(intent);
+
+        }
     }
 
     /** Bottom navigation links */
@@ -95,4 +108,29 @@ public class ReservationActivity extends AppCompatActivity implements DatePicker
         Intent intent = new Intent(this, MyReservations.class);
         startActivity(intent);
     }
+
+
+    public void setReserved(String name, String date){
+        if (name.equals("Beyonce")) {
+            reservationBool[0] = true;
+            reservationDate[0] = date;
+        } else if (name.equals("Jay-Z")) {
+            reservationBool[1] = true;
+            reservationDate[1] = date;
+        } else if (name.equals("Kim")) {
+            reservationBool[2] = true;
+            reservationDate[2] = date;
+        } else if (name.equals("Kanye")) {
+            reservationBool[3] = true;
+            reservationDate[3] = date;
+        } else if (name.equals("Selena")) {
+            reservationBool[4] = true;
+            reservationDate[4] = date;
+        } else if (name.equals("JB")) {
+            reservationBool[5] = true;
+            reservationDate[5] = date;
+        }
+    }
 }
+
+

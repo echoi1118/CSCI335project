@@ -68,6 +68,9 @@
     <string name="reserve_btn">Reserve</string>
     <string name="select_date">Click me to select pickup date</string>
     <string name="del_reserve">Delete Reservation</string>
+    <string name="res_desc">Reservation on:</string>
+    <string name="day_error">Error: Please select a date</string>
+
 
     <!-- Strings related to Dog Specs screens -->
     <string name="add_favorites">Add to Favorites</string>

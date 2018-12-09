@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,6 +15,7 @@ import java.util.List;
 
 import static android.content.ContentValues.TAG;
 import static com.example.count.csci335project.DogModel.reservationBool;
+import static com.example.count.csci335project.DogModel.reservationDate;
 
 public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
     private List<DogModel> objectList;
@@ -44,20 +46,25 @@ public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        private TextView dogName;
-        private ImageView imgThumb, imgDelete;
+        private TextView dogName, resDate;
+        private ImageView imgThumb;
+        private Button imgDelete;
         private int position;
         private DogModel currentObject;
 
+
+
         public MyViewHolder(View itemView) {
             super(itemView);
-            dogName = (TextView) itemView.findViewById(R.id.dog_name);
-            imgThumb = (ImageView) itemView.findViewById(R.id.dog_img);
-            imgDelete = (ImageView) itemView.findViewById(R.id.cancel_res);
+            dogName = (TextView) itemView.findViewById(R.id.res_dog_name);
+            resDate = (TextView) itemView.findViewById(R.id.res_date);
+            imgThumb = (ImageView) itemView.findViewById(R.id.res_dog_img);
+            imgDelete = (Button) itemView.findViewById(R.id.cancel_res);
         }
 
         public void setData(DogModel currentObject, int position) {
             this.dogName.setText(currentObject.getName());
+            this.resDate.setText(setResDate(position));
             this.imgThumb.setImageResource(currentObject.getImageID());
             this.position = position;
             this.currentObject = currentObject;
@@ -81,21 +88,51 @@ public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
     public void removeItem(int position) {
 
         DogModel object = objectList.get(position);
-        if (object.getName() == "Beyonce")
+        if (object.getName().equals("Beyonce")) {
             reservationBool[0] = false;
-        else if (object.getName() == "Jay-Z")
+            reservationDate[0] = "No date picked";
+        } else if (object.getName().equals("Jay-Z")) {
             reservationBool[1] = false;
-        else if (object.getName() == "Kim")
+            reservationDate[1] = "No date picked";
+        } else if (object.getName().equals("Kim")) {
             reservationBool[2] = false;
-        else if (object.getName() == "Kanye")
+            reservationDate[2] = "No date picked";
+        } else if (object.getName().equals("Kanye")) {
             reservationBool[3] = false;
-        else if (object.getName() == "Selena")
+            reservationDate[3] = "No date picked";
+        } else if (object.getName().equals("Selena")) {
             reservationBool[4] = false;
-        else if (object.getName() == "JB")
+            reservationDate[4] = "No date picked";
+        } else if (object.getName().equals("JB")) {
             reservationBool[5] = false;
+            reservationDate[5] = "No date picked";
+        }
 
         objectList.remove(position);
         notifyItemRemoved(position);
         notifyItemRangeChanged(position, objectList.size());
     }
+
+    public CharSequence setResDate(int position){
+        CharSequence date = reservationDate[5];
+
+       DogModel object = objectList.get(position);
+        if (object.getName().equals("Beyonce")) {
+            date = reservationDate[0];
+        } else if (object.getName().equals("Jay-Z")) {
+            date = reservationDate[1];
+        } else if (object.getName().equals("Kim")) {
+            date = reservationDate[2];
+        } else if (object.getName().equals("Kanye")) {
+            date = reservationDate[3];
+        } else if (object.getName().equals("Selena")) {
+            date = reservationDate[4];
+        }
+
+        return date;
+
+    }
+
+
+
 }

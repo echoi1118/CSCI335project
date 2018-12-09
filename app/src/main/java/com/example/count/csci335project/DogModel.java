@@ -16,6 +16,25 @@ public class DogModel {
             false
     };
 
+    public static CharSequence[] reservationDate = {
+            "No Date Selected",
+            "No Date Selected",
+            "No Date Selected",
+            "No Date Selected",
+            "No Date Selected",
+            "No Date Selected"
+    };
+
+    public static boolean[] favoriteBool = {
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+    };
+
+
     public int getImageID() {
         return imageID;
     }
@@ -53,7 +72,25 @@ public class DogModel {
         boolean[] res = getRes();
 
         for (int i = 0; i < res.length; i++) {
-            if (res[i] == true)
+            if (res[i])
+            {
+                DogModel dog = new DogModel();
+                dog.setImageID(images[i]);
+                dog.setName(names[i]);
+                dataList.add(dog);
+            }
+        }
+        return dataList;
+    }
+
+    public static List<DogModel> getFavList() {
+        List<DogModel> dataList = new ArrayList<>();
+        int[] images = getImages();
+        String[] names = getNames();
+        boolean[] fav = getFav();
+
+        for (int i = 0; i < fav.length; i++) {
+            if (fav[i])
             {
                 DogModel dog = new DogModel();
                 dog.setImageID(images[i]);
@@ -91,5 +128,9 @@ public class DogModel {
 
     private static boolean[] getRes(){
         return reservationBool;
+    }
+
+    private static boolean[] getFav(){
+        return favoriteBool;
     }
 }

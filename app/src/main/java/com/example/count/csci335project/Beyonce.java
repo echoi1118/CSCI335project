@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
+import static com.example.count.csci335project.DogModel.favoriteBool;
 import static com.example.count.csci335project.DogModel.reservationBool;
 
 public class Beyonce extends AppCompatActivity {
@@ -17,14 +19,39 @@ public class Beyonce extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beyonce);
+
+        if(!favoriteBool[0])
+        {
+            ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+            FaveButton.setImageResource(R.drawable.ic_empty_favorites);
+        }
+        else{
+            ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+            FaveButton.setImageResource(R.drawable.ic_favorites);
+        }
+
+    }
+
+
+    public void Favorites(View view){
+        if(favoriteBool[0])
+        {
+            favoriteBool[0] = false;
+            ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+            FaveButton.setImageResource(R.drawable.ic_empty_favorites);
+        }
+        else{
+            favoriteBool[0] = true;
+            ImageButton FaveButton = findViewById(R.id.FavoriteButton);
+            FaveButton.setImageResource(R.drawable.ic_favorites);
+        }
+
     }
 
     /** Reserve Beyonce */
     public void goToReserveBeyonce(View view) {
         Intent intent = new Intent(this, ReservationActivity.class);
         Bundle extras = new Bundle();
-
-        reservationBool[0] = true;
 
         TextView dog_name = findViewById(R.id.dog_name);
         TextView dog_desc = findViewById(R.id.dog_desc);
