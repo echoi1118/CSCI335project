@@ -36,8 +36,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="Dog Name"
+            android:fontFamily="sans-serif"
+            android:text="@string/dogDesc"
             android:textAppearance="@android:style/TextAppearance.Material.Display1"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
             card_view:layout_constraintStart_toEndOf="@+id/res_dog_img"
             card_view:layout_constraintTop_toTopOf="parent" />
 
@@ -54,15 +57,18 @@
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@+id/res_date" />
+            card_view:layout_constraintTop_toBottomOf="@+id/res_date"
+            card_view:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/res_desc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
             android:text="@string/res_desc"
             android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="18sp"
             card_view:layout_constraintStart_toStartOf="@+id/res_dog_name"
             card_view:layout_constraintTop_toBottomOf="@+id/res_dog_name" />
 
@@ -71,8 +77,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="TextView"
+            android:fontFamily="sans-serif"
+            android:text="@string/dogDesc"
             android:textAppearance="@android:style/TextAppearance.Material.Menu"
+            android:textSize="18sp"
             card_view:layout_constraintStart_toStartOf="@+id/res_desc"
             card_view:layout_constraintTop_toBottomOf="@+id/res_desc" />
 

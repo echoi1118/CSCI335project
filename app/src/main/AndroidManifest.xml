@@ -32,33 +32,33 @@
             android:label="@string/title_activity_dog_directory" />
         <activity
             android:name=".Beyonce"
-            android:label="@string/dog1name"
+            android:label="Beyonce"
             android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".JayZ"
-            android:label="@string/dog2name"
+            android:label="Jay-Z"
             android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".Kim"
-            android:label="@string/dog3name"
+            android:label="Kim"
             android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".Kanye"
-            android:label="@string/dog4name"
+            android:label="Kanye"
             android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".Selena"
-            android:label="@string/dog5name"
+            android:label="Selena"
             android:parentActivityName=".DogDirectory" />
         <activity
             android:name=".JB"
-            android:label="@string/dog6name"
+            android:label="JB"
             android:parentActivityName=".DogDirectory" />
         <activity android:name=".OurMission" />
         <activity android:name=".ReservationActivity" />
         <activity
             android:name=".Favorites"
-            android:label="@string/favorites" />
+            android:label="My Favorites" />
         <activity
             android:name=".DonateActivity"
             android:parentActivityName=".OurMission" />
