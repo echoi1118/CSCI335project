@@ -21,38 +21,40 @@
 
     <EditText
         android:id="@+id/cardholder_name"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/cardholder_name"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/donate_logo" />
 
     <EditText
         android:id="@+id/cc_number"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/cc_number"
         android:inputType="number"
-        android:text="@string/card_number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <EditText
         android:id="@+id/csv_number"
-        android:layout_width="114dp"
+        android:layout_width="115dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="19dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/csv"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/submit_donation_btn"
         app:layout_constraintStart_toStartOf="@+id/cc_number"
         app:layout_constraintTop_toBottomOf="@+id/cc_number" />
 
@@ -60,13 +62,13 @@
         android:id="@+id/submit_donation_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_square_img"
         android:onClick="goToDonateSuccessScreen"
         android:text="@string/submit_donation_btn"
-        app:layout_constraintBottom_toTopOf="@+id/bottom_button_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/csv_number" />
 
 
     <!-- Code for the bottom navigation workaround -->
@@ -184,6 +186,7 @@
         android:layout_width="157dp"
         android:layout_height="76dp"
         android:layout_marginTop="8dp"
+        android:checkedButton="@+id/visa_radio"
         app:layout_constraintStart_toStartOf="@+id/cardholder_name"
         app:layout_constraintTop_toBottomOf="@+id/cardholder_name">
 
@@ -202,6 +205,20 @@
             android:text="@string/mc" />
 
     </RadioGroup>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".85" />
 
 
 </android.support.constraint.ConstraintLayout>
