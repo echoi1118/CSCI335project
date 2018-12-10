@@ -25,11 +25,11 @@
     <string name="create_acct_pw">Enter your password</string>
     <string name="create_acct_pw_confirm">Re-enter your password</string>
     <string name="create_acct_btn">Create</string>
-    <string name="pass_constraints">A password must contain 8 characters including at least:\n1 lowercase character\n1 uppercase character\n1 number</string>
+    <string name="pass_constraints">A password must contain\n8 characters including at least:\n1 lowercase character\n1 uppercase character\n1 number</string>
 
     <!-- Strings related to Create Account Success screen -->
     <string name="success_notice">Success!</string>
-    <string name="create_acct_success_notice">Your account has been successfully created.\nClick here to sign in.</string>
+    <string name="create_acct_success_notice">Your account has been successfully created.\nYou will be redirected to the sign in page now.</string>
 
     <!-- Strings related to Dog Directory Screen -->
     <string name="title_activity_dog_directory">Dog Directory</string>
@@ -76,6 +76,10 @@
     <!-- Strings related to Dog Specs screens -->
     <string name="add_favorites">Add to Favorites</string>
     <string name="reserve_button">Reserve this Dog</string>
+
+    <string name="fav_empty">Let\'s find a dog that you love!</string>
+    <string name="res_empty">Let\'s find a dog that you want to take home!</string>
+
 
 
 </resources>

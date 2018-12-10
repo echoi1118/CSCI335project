@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -21,6 +22,8 @@ public class MyReservations extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         ResAdapter adapter = new ResAdapter(this, DogModel.getResList());
         recyclerView.setAdapter(adapter);
+
+        emptyCheck(adapter);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -48,5 +51,12 @@ public class MyReservations extends AppCompatActivity {
     public void goToMyReservations(View view){
         Intent intent = new Intent(this, MyReservations.class);
         startActivity(intent);
+    }
+
+    public void emptyCheck(ResAdapter adapter){
+        if (adapter.getItemCount()>0){
+            TextView message = (TextView) findViewById(R.id.empty_mes2);
+            message.setVisibility(View.INVISIBLE);
+        }
     }
 }

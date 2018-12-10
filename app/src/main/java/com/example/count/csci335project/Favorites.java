@@ -21,16 +21,22 @@ public class Favorites extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favorites);
 
+
+
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.fav_recycler_view);
         FavAdapter adapter = new FavAdapter(this, DogModel.getFavList());
         recyclerView.setAdapter(adapter);
+
+        if (adapter.getItemCount()>0){
+            TextView message = (TextView) findViewById(R.id.empty_mes);
+            message.setVisibility(View.INVISIBLE);
+        }
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
 
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-
 
     }
 

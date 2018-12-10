@@ -36,14 +36,14 @@ public class JB extends AppCompatActivity {
 
 
     public void Favorites(View view){
-        if(favoriteBool[4])
+        if(favoriteBool[5])
         {
-            favoriteBool[4] = false;
+            favoriteBool[5] = false;
             ImageButton FaveButton = findViewById(R.id.FavoriteButton);
             FaveButton.setImageResource(R.drawable.ic_empty_favorites);
         }
         else{
-            favoriteBool[4] = true;
+            favoriteBool[5] = true;
             ImageButton FaveButton = findViewById(R.id.FavoriteButton);
             FaveButton.setImageResource(R.drawable.ic_favorites);
         }

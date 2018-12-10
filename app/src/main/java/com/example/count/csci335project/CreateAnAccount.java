@@ -23,6 +23,10 @@ public class CreateAnAccount extends AppCompatActivity {
         EditText validation = (EditText) findViewById(R.id.create_acct_email);
         EditText pass1val = (EditText) findViewById(R.id.create_acct_pw);
         EditText pass2val = (EditText) findViewById(R.id.create_acct_pw_confirm);
+
+        String pass1 = pass1val.getText().toString();
+        String pass2 = pass2val.getText().toString();
+
         if(!isValidEmail(validation.getText()))
         {
             validation.setError("Please enter a valid email.");
@@ -32,7 +36,7 @@ public class CreateAnAccount extends AppCompatActivity {
             pass1val.setError("Please enter a valid password.");
 
         }
-        else if(pass1val.getText().equals(pass2val.getText()))
+        else if(!pass1.equals(pass2))
         {
             pass2val.setError("Please enter a matching password.");
         }
@@ -54,7 +58,7 @@ public class CreateAnAccount extends AppCompatActivity {
         Pattern pattern;
         Matcher matcher;
 
-        final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{4,}$";
+        final String PASSWORD_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8,}$";
 
         pattern = Pattern.compile(PASSWORD_PATTERN);
         matcher = pattern.matcher(password);
