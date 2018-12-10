@@ -23,7 +23,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            android:fontFamily="casual"
+            android:fontFamily="sans-serif"
             android:text="@string/dog1name"
             android:textAlignment="center"
             android:textAppearance="@android:style/TextAppearance.Material.Display3"

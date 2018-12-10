@@ -95,7 +95,7 @@
         android:id="@+id/dog_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="casual"
+        android:fontFamily="sans-serif"
         android:text="@string/dog2name"
         android:textAppearance="@android:style/TextAppearance.Material.Display1"
         android:textColor="@android:color/black"
