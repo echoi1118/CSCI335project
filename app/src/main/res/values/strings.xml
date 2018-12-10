@@ -25,6 +25,7 @@
     <string name="create_acct_pw">Enter your password</string>
     <string name="create_acct_pw_confirm">Re-enter your password</string>
     <string name="create_acct_btn">Create</string>
+    <string name="pass_constraints">A password must contain 8 characters including at least:\n1 lowercase character\n1 uppercase character\n1 number</string>
 
     <!-- Strings related to Create Account Success screen -->
     <string name="success_notice">Success!</string>
