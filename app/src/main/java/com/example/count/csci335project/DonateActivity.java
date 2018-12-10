@@ -57,10 +57,10 @@ public class DonateActivity extends AppCompatActivity {
         if(nameVal.length() == 0) {
             name.setError("Please enter a valid card holder name.");
         }
-        else if(!isValidNumber(cardVal)) {
+        else if(!isValidCCNumber(cardVal)) {
             cardNum.setError("Please enter a valid card number");
         }
-        else if(!isValidNumber(csvVal)) {
+        else if(!isValidCSVNumber(csvVal)) {
             csv.setError("Please enter a valid csv");
         }
         else {
@@ -69,12 +69,26 @@ public class DonateActivity extends AppCompatActivity {
         }
     }
 
-    public final static boolean isValidNumber(CharSequence number) {
+    public final static boolean isValidCSVNumber(CharSequence number) {
 
         Pattern pattern;
         Matcher matcher;
 
-        final String NUMBER_PATTERN = "^(?=.*[0-9])(?=\\S+$).{2,}$";
+        final String NUMBER_PATTERN = "^(?=.*[0-9])(?=\\S+$).{3,}$";
+
+        pattern = Pattern.compile(NUMBER_PATTERN);
+        matcher = pattern.matcher(number);
+
+        return matcher.matches();
+
+    }
+
+    public final static boolean isValidCCNumber(CharSequence number) {
+
+        Pattern pattern;
+        Matcher matcher;
+
+        final String NUMBER_PATTERN = "^(?=.*[0-9])(?=\\S+$).{12,}$";
 
         pattern = Pattern.compile(NUMBER_PATTERN);
         matcher = pattern.matcher(number);

@@ -10,6 +10,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Favorites extends AppCompatActivity {
@@ -27,10 +28,7 @@ public class Favorites extends AppCompatActivity {
         FavAdapter adapter = new FavAdapter(this, DogModel.getFavList());
         recyclerView.setAdapter(adapter);
 
-        if (adapter.getItemCount()>0){
-            TextView message = findViewById(R.id.empty_mes);
-            message.setVisibility(View.INVISIBLE);
-        }
+        emptyCheck(adapter);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -60,6 +58,20 @@ public class Favorites extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void emptyCheck(FavAdapter adapter){
+        if (adapter.getItemCount()>0){
+            TextView message = findViewById(R.id.empty_mes);
+            ImageView border = findViewById(R.id.fav_rounded_white_sq_bg);
+            ImageView blueDog = findViewById(R.id.fav_little_blue_dog);
+            ImageView borderB = findViewById(R.id.fav_empty_bottom_border);
+            ImageView borderT = findViewById(R.id.fav_empty_top_border);
 
+            message.setVisibility(View.INVISIBLE);
+            border.setVisibility(View.INVISIBLE);
+            borderB.setVisibility(View.INVISIBLE);
+            borderT.setVisibility(View.INVISIBLE);
+            blueDog.setVisibility(View.INVISIBLE);
+        }
+    }
 
 }

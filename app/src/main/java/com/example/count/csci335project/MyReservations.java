@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -56,7 +57,16 @@ public class MyReservations extends AppCompatActivity {
     public void emptyCheck(ResAdapter adapter){
         if (adapter.getItemCount()>0){
             TextView message = findViewById(R.id.empty_mes2);
+            ImageView border = findViewById(R.id.res_rounded_white_sq_bg);
+            ImageView blueDog = findViewById(R.id.res_little_blue_dog);
+            ImageView borderB = findViewById(R.id.res_empty_bottom_border);
+            ImageView borderT = findViewById(R.id.res_empty_top_border);
+
             message.setVisibility(View.INVISIBLE);
+            border.setVisibility(View.INVISIBLE);
+            borderB.setVisibility(View.INVISIBLE);
+            borderT.setVisibility(View.INVISIBLE);
+            blueDog.setVisibility(View.INVISIBLE);
         }
     }
 }
