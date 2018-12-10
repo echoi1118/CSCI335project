@@ -23,12 +23,12 @@ public class Favorites extends AppCompatActivity {
 
 
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.fav_recycler_view);
+        RecyclerView recyclerView = findViewById(R.id.fav_recycler_view);
         FavAdapter adapter = new FavAdapter(this, DogModel.getFavList());
         recyclerView.setAdapter(adapter);
 
         if (adapter.getItemCount()>0){
-            TextView message = (TextView) findViewById(R.id.empty_mes);
+            TextView message = findViewById(R.id.empty_mes);
             message.setVisibility(View.INVISIBLE);
         }
 

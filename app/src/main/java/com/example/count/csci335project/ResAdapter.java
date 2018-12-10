@@ -56,10 +56,10 @@ public class ResAdapter extends RecyclerView.Adapter<ResAdapter.MyViewHolder> {
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            dogName = (TextView) itemView.findViewById(R.id.res_dog_name);
-            resDate = (TextView) itemView.findViewById(R.id.res_date);
-            imgThumb = (ImageView) itemView.findViewById(R.id.res_dog_img);
-            imgDelete = (Button) itemView.findViewById(R.id.cancel_res);
+            dogName = itemView.findViewById(R.id.res_dog_name);
+            resDate = itemView.findViewById(R.id.res_date);
+            imgThumb = itemView.findViewById(R.id.res_dog_img);
+            imgDelete = itemView.findViewById(R.id.cancel_res);
         }
 
         public void setData(DogModel currentObject, int position) {

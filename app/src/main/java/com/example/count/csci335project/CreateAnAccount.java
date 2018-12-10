@@ -20,9 +20,9 @@ public class CreateAnAccount extends AppCompatActivity {
 
     /** Called when the user clicks the "Create" (account) button */
     public void goToCreateAccountSuccessPage(View view) {
-        EditText validation = (EditText) findViewById(R.id.create_acct_email);
-        EditText pass1val = (EditText) findViewById(R.id.create_acct_pw);
-        EditText pass2val = (EditText) findViewById(R.id.create_acct_pw_confirm);
+        EditText validation = findViewById(R.id.create_acct_email);
+        EditText pass1val = findViewById(R.id.create_acct_pw);
+        EditText pass2val = findViewById(R.id.create_acct_pw_confirm);
 
         String pass1 = pass1val.getText().toString();
         String pass2 = pass2val.getText().toString();

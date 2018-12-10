@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToDogDirectory(View view){
-        EditText validation = (EditText) findViewById(R.id.email_login_field);
-        EditText passValid = (EditText) findViewById(R.id.pw_login_field);
+        EditText validation = findViewById(R.id.email_login_field);
+        EditText passValid = findViewById(R.id.pw_login_field);
         if(!isValidEmail(validation.getText()))
         {
             validation.setError("Please enter a valid email.");

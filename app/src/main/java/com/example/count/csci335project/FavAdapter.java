@@ -49,8 +49,8 @@ public class FavAdapter extends RecyclerView.Adapter<FavAdapter.MyViewHolder> {
 
         public MyViewHolder(View itemView) {
             super(itemView);
-            dogName = (TextView) itemView.findViewById(R.id.fav_dog_name);
-            imgThumb = (ImageView) itemView.findViewById(R.id.fav_dog_pic);
+            dogName = itemView.findViewById(R.id.fav_dog_name);
+            imgThumb = itemView.findViewById(R.id.fav_dog_pic);
         }
 
         public void setData(DogModel currentObject, int position) {

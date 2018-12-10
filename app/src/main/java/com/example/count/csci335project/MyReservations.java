@@ -19,7 +19,7 @@ public class MyReservations extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_reservations);
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
         ResAdapter adapter = new ResAdapter(this, DogModel.getResList());
         recyclerView.setAdapter(adapter);
 
@@ -55,7 +55,7 @@ public class MyReservations extends AppCompatActivity {
 
     public void emptyCheck(ResAdapter adapter){
         if (adapter.getItemCount()>0){
-            TextView message = (TextView) findViewById(R.id.empty_mes2);
+            TextView message = findViewById(R.id.empty_mes2);
             message.setVisibility(View.INVISIBLE);
         }
     }
