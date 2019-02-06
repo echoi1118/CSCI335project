@@ -1,4 +1,4 @@
-# Dogs-R-Us
+# Dogs 'R Us
 CSCI 335 group project for Fall 2018
 
 **PROJECT SCOPE:**
